@@ -1,0 +1,23 @@
+
+
+.button {
+    background: rgb(66, 133, 244);
+    color: white;
+    border: 1px solid rgb(66, 133, 244);
+    border-radius: 5px;
+    padding: 1ch 2ch;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+
+.card-width {
+    max-width: 40ch;
+}
+
+.div-shadow {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
