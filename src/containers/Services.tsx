@@ -4,7 +4,8 @@ import PricingCard from "../components/PricingCard";
 const Services: React.FC = () => {
   return (
     <div className="pt-24 bg-gray-50 w-full p-5 md:p-20 min-h-screen flex flex-col items-center">
-      <div className="w-50 text-sky-800 my-20">
+      <p className="my-auto">Currently working on this...</p>
+      {/* <div className="w-50 text-sky-800 my-20">
         <p className="font-bold text-4xl mb-2">What you value the most?</p>
         <p className="w-100 text-lg">
           Personally, I value time upon all things, this is why I charge for
@@ -48,7 +49,7 @@ const Services: React.FC = () => {
           ]}
           text="Empower your organization with highly specialized web applications tailored to specific business needs."
         />
-      </div>
+      </div> */}
     </div>
   );
 };
