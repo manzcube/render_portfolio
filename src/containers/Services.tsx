@@ -4,7 +4,9 @@ import PricingCard from "../components/PricingCard";
 const Services: React.FC = () => {
   return (
     <div className="pt-24 bg-gray-50 w-full p-5 md:p-20 min-h-screen flex flex-col items-center">
-      <p className="my-auto">Currently working on this...</p>
+      <p className="my-auto text-muted text-gray-500">
+        Currently working on this...
+      </p>
       {/* <div className="w-50 text-sky-800 my-20">
         <p className="font-bold text-4xl mb-2">What you value the most?</p>
         <p className="w-100 text-lg">

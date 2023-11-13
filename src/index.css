@@ -7,6 +7,8 @@
 html,
 body {
   scroll-behavior: smooth;
+  position: relative;
+  /* overflow: hidden; */
 }
 html::-webkit-scrollbar {
   width: 0;
@@ -37,6 +39,18 @@ code {
 .homeBackground {
   background: linear-gradient(to bottom, rgb(59 130 246), white);
 }
+#skill-features {
+  display: flex;
+  gap: 15px;
+  font-weight: 400;
+}
+#skill-features span {
+  text-transform: lowercase;
+  font-size: 10px;
+  padding: 2px 6px;
+  background: #e0e0e0;
+  border-radius: 12px;
+}
 
 .vertical-line {
   position: absolute;
@@ -46,15 +60,21 @@ code {
   height: 100%; /* Make it cover the full height of the page */
   top: 0;
   left: 20px; /* Adjust this value to position the line where you want it initially */
-  transition: left 0.3s ease; /* Add a smooth transition effect */
+  transition: left 0.5s ease; /* Add a smooth transition effect */
 }
 
 .Project:hover img {
   filter: brightness(50%);
-  transition: transform 0.3s ease, filter 0.3s ease;
+  transition: transform 0.5s ease, filter 0.5s ease;
 }
 
 .Project:hover span {
   opacity: 1;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease;
+}
+
+@media screen and (max-width: 400px) {
+  #skill-features span {
+    font-size: 8px;
+  }
 }

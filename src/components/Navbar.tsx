@@ -12,11 +12,11 @@ const Navbar: React.FC = () => {
   let inContact = currentLocation === "contact";
 
   return (
-    <div className="w-full fixed z-10 flex p-3 justify-between items-center text-xs bg-blue-500">
+    <div className="w-full fixed flex z-30 p-3 justify-between items-center text-xs bg-blue-500">
       <img src={logo} className="w-8" alt="" />
       <Link
         to="/"
-        className="font-extrabold text-lg tracking-widest text-white ml-44"
+        className="font-extrabold hidden md:flex text-xs lg:text-lg lg:tracking-widest text-white lg:ml-44"
       >
         MANZCUBE
       </Link>
@@ -37,14 +37,6 @@ const Navbar: React.FC = () => {
         >
           Services
         </Link>
-        {/* <Link
-          className={`${
-            inContact ? "bg-blue-600 shadow-inner" : ""
-          } p-2 rounded text-white transition-all duration-500`}
-          to="/contact"
-        >
-          Contact Me
-        </Link> */}
       </div>
     </div>
   );

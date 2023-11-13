@@ -1,0 +1,201 @@
+/* Floating stack icons rulesets */
+
+.floating-stack-icons {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* To allow clicks to pass through to elements below */
+}
+
+.icon {
+  width: 30px;
+  height: auto;
+  position: absolute;
+  opacity: 0.8;
+}
+
+.icon-1 {
+  animation: floatIcon1 30s linear infinite;
+}
+.icon-2 {
+  animation: floatIcon2 30s linear infinite;
+}
+.icon-3 {
+  animation: floatIcon3 30s linear infinite;
+}
+.icon-4 {
+  animation: floatIcon4 30s linear infinite;
+}
+.icon-5 {
+  animation: floatIcon5 30s linear infinite;
+}
+.icon-6 {
+  animation: floatIcon6 30s linear infinite;
+}
+.icon-7 {
+  animation: floatIcon7 30s linear infinite;
+}
+.icon-8 {
+  animation: floatIcon8 30s linear infinite;
+}
+.icon-9 {
+  animation: floatIcon9 30s linear infinite;
+}
+
+/* Define keyframes for floating animation */
+@keyframes floatIcon1 {
+  0% {
+    transform: translate(80vh, 10vh);
+  }
+  25% {
+    transform: translate(90vh, 70vh);
+  }
+  50% {
+    transform: translate(40vh, 90vh);
+  }
+  75% {
+    transform: translate(0vh, 40vh);
+  }
+  100% {
+    transform: translate(80vh, 10vh);
+  }
+}
+@keyframes floatIcon2 {
+  0% {
+    transform: translate(70vh, 10vh);
+  }
+  25% {
+    transform: translate(0vh, 70vh);
+  }
+  50% {
+    transform: translate(50vh, 90vh);
+  }
+  75% {
+    transform: translate(90vh, 40vh);
+  }
+  100% {
+    transform: translate(70vh, 10vh);
+  }
+}
+@keyframes floatIcon3 {
+  0% {
+    transform: translate(10vh, 80vh);
+  }
+  25% {
+    transform: translate(80vh, 20vh);
+  }
+  50% {
+    transform: translate(10vh, 10vh);
+  }
+  75% {
+    transform: translate(40vh, 40vh);
+  }
+  100% {
+    transform: translate(10vh, 80vh);
+  }
+}
+
+@keyframes floatIcon4 {
+  0% {
+    transform: translate(50vh, 10vh);
+  }
+  25% {
+    transform: translate(80vh, 50vh);
+  }
+  50% {
+    transform: translate(90vh, 90vh);
+  }
+  75% {
+    transform: translate(10vh, 20vh);
+  }
+  100% {
+    transform: translate(50vh, 10vh);
+  }
+}
+@keyframes floatIcon5 {
+  0% {
+    transform: translate(40vh, 10vh);
+  }
+  25% {
+    transform: translate(10vh, 10vh);
+  }
+  50% {
+    transform: translate(60vh, 90vh);
+  }
+  75% {
+    transform: translate(70vh, 30vh);
+  }
+  100% {
+    transform: translate(40vh, 10vh);
+  }
+}
+@keyframes floatIcon6 {
+  0% {
+    transform: translate(30vh, 90vh);
+  }
+  25% {
+    transform: translate(50vh, 40vh);
+  }
+  50% {
+    transform: translate(20vh, 10vh);
+  }
+  75% {
+    transform: translate(90vh, 60vh);
+  }
+  100% {
+    transform: translate(30vh, 90vh);
+  }
+}
+@keyframes floatIcon7 {
+  0% {
+    transform: translate(20vh, 10vh);
+  }
+  25% {
+    transform: translate(60vh, 90vh);
+  }
+  50% {
+    transform: translate(10vh, 10vh);
+  }
+  75% {
+    transform: translate(80vh, 90vh);
+  }
+  100% {
+    transform: translate(20vh, 10vh);
+  }
+}
+@keyframes floatIcon8 {
+  0% {
+    transform: translate(10vh, 70vh);
+  }
+  25% {
+    transform: translate(40vh, 10vh);
+  }
+  50% {
+    transform: translate(70vh, 90vh);
+  }
+  75% {
+    transform: translate(50vh, 10vh);
+  }
+  100% {
+    transform: translate(10vh, 70vh);
+  }
+}
+
+@keyframes floatIcon9 {
+  0% {
+    transform: translate(70vh, 10vh);
+  }
+  25% {
+    transform: translate(90vh, 60vh);
+  }
+  50% {
+    transform: translate(10vh, 90vh);
+  }
+  75% {
+    transform: translate(0vh, 20vh);
+  }
+  100% {
+    transform: translate(70vh, 10vh);
+  }
+}

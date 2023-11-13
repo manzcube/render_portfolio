@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const SideNavbar = () => {
   const [activeSection, setActiveSection] = useState("introduction");
-
+  console.log(activeSection);
   useEffect(() => {
     const handleScroll = () => {
       // Get the scroll position
@@ -15,31 +15,32 @@ const SideNavbar = () => {
       const experienceSection = document.getElementById("experience");
 
       // Check if the elements exist before comparing their positions
-      if (
-        introductionSection &&
-        techSection &&
-        languagesSection &&
-        experienceSection
-      ) {
+      if (introductionSection && experienceSection) {
         // Calculate the position of each section
         const introductionSectionTop = introductionSection.offsetTop - 100;
-        const techSectionTop = techSection.offsetTop - 100;
-        const languagesSectionTop = languagesSection.offsetTop - 100;
         const experienceSectionTop = experienceSection.offsetTop - 100;
 
         // Determine which section is in view
-        if (scrollY >= introductionSectionTop && scrollY < techSectionTop) {
-          setActiveSection("introduction");
-        } else if (scrollY >= techSectionTop && scrollY < languagesSectionTop) {
-          setActiveSection("tech");
-        } else if (
-          scrollY >= languagesSectionTop &&
+        if (
+          scrollY >= introductionSectionTop &&
           scrollY < experienceSectionTop
         ) {
-          setActiveSection("languages");
-        } else if (scrollY >= experienceSectionTop) {
+          setActiveSection("introduction");
+        } else {
           setActiveSection("experience");
         }
+        // if (scrollY >= introductionSectionTop && scrollY < techSectionTop) {
+        //   setActiveSection("introduction");
+        // } else if (scrollY >= techSectionTop && scrollY < languagesSectionTop) {
+        //   setActiveSection("tech");
+        // } else if (
+        //   scrollY >= languagesSectionTop &&
+        //   scrollY < experienceSectionTop
+        // ) {
+        //   setActiveSection("languages");
+        // } else if (scrollY >= experienceSectionTop) {
+        //   setActiveSection("experience");
+        // }
       }
     };
     // Attach the scroll event listener
@@ -73,7 +74,7 @@ const SideNavbar = () => {
           />
         </svg>
       </a>
-      <a
+      {/* <a
         className={`${
           activeSection === "tech" ? "bg-blue-400 p-2" : "p-4"
         } transition-all duration-300 rounded-md`}
@@ -93,28 +94,7 @@ const SideNavbar = () => {
             d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3"
           />
         </svg>
-      </a>
-      <a
-        className={`${
-          activeSection === "languages" ? "bg-blue-400 p-2" : "p-4"
-        } transition-all duration-300 rounded-md`}
-        href="#languages"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802"
-          />
-        </svg>
-      </a>
+      </a> */}
       <a
         className={`${
           activeSection === "experience" ? "bg-blue-400 p-2" : "p-4"
@@ -136,6 +116,27 @@ const SideNavbar = () => {
           />
         </svg>
       </a>
+      {/* <a
+        className={`${
+          activeSection === "languages" ? "bg-blue-400 p-2" : "p-4"
+        } transition-all duration-300 rounded-md`}
+        href="#languages"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802"
+          />
+        </svg>
+      </a> */}
     </div>
   );
 };
