@@ -65,20 +65,17 @@ const Introduction: React.FC = () => {
         {/* Languages */}
         <div className="flex gap-10 px-2 pt-4">
           <img
-            id="english-language"
-            className="h-4 w-4 english-language"
+            className="h-4 w-4 animated-bouncing"
             src={eng}
             alt="I speak english"
           />
           <img
-            id="spanish-language"
-            className="h-4 w-4 spanish-language"
+            className="h-4 w-4 animated-bouncing-delayed"
             src={esp}
             alt="I speak spanish"
           />
           <img
-            id="catalan-language"
-            className="h-4 w-4 rounded-sm opacity-90"
+            className="h-4 w-4 animated-bouncing-delayed-2 rounded-sm opacity-90"
             src={cat}
             alt="I speak catalan"
           />

@@ -64,14 +64,14 @@ const Navbar: React.FC = () => {
       {/* <img src={logo} className="w-8" alt="" /> */}
       <Link
         to="/"
-        className="font-bold text-xs lg:text-lg lg:tracking-widest text-white lg:ml-44"
+        className="font-bold text-xs lg:text-lg lg:tracking-widest text-white ml-8 lg:ml-44"
       >
         MANZCUBE
       </Link>
       <div className="flex gap-4 w-fit">
         <button
           className={`${
-            activeSection === "introduction" ? "bg-blue-600 shadow-inner" : ""
+            activeSection === "introduction" ? "bg-sky-500 shadow-inner" : ""
           } p-2 rounded text-white transition-all duration-500`}
           onClick={() => scrollToSection("introduction")}
         >
@@ -79,7 +79,7 @@ const Navbar: React.FC = () => {
         </button>
         <button
           className={`${
-            activeSection === "experience" ? "bg-blue-600 shadow-inner" : ""
+            activeSection === "experience" ? "bg-sky-500 shadow-inner" : ""
           } p-2 rounded text-white transition-all duration-500`}
           onClick={() => scrollToSection("experience")}
         >
@@ -87,7 +87,7 @@ const Navbar: React.FC = () => {
         </button>
         <button
           className={`${
-            activeSection === "services" ? "bg-blue-600 shadow-inner" : ""
+            activeSection === "services" ? "bg-sky-500 shadow-inner" : ""
           } p-2 rounded text-white transition-all duration-500`}
           onClick={() => scrollToSection("services")}
         >

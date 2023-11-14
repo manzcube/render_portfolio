@@ -70,6 +70,11 @@ code {
   animation-delay: 1s;
 }
 
+.animated-bouncing-delayed-2 {
+  animation: bounce 4s infinite;
+  animation-delay: 2s;
+}
+
 .animated-bouncing {
   animation: bounce 4s infinite;
 }
