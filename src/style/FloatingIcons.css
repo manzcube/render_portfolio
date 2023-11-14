@@ -45,6 +45,10 @@
   animation: floatIcon9 30s linear infinite;
 }
 
+.icon-10 {
+  animation: floatIcon10 30s linear infinite;
+}
+
 /* Define keyframes for floating animation */
 @keyframes floatIcon1 {
   0% {
@@ -199,5 +203,23 @@
   }
   100% {
     transform: translate(70vw, 10vh);
+  }
+}
+
+@keyframes floatIcon10 {
+  0% {
+    transform: translate(30vw, 10vh);
+  }
+  25% {
+    transform: translate(90vw, 18vh);
+  }
+  50% {
+    transform: translate(10vw, 10vh);
+  }
+  75% {
+    transform: translate(0vw 46vh);
+  }
+  100% {
+    transform: translate(30vw, 10vh);
   }
 }

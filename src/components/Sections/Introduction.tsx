@@ -117,7 +117,7 @@ const Introduction: React.FC = () => {
           </div>
 
           <a
-            className="bounce-up-on-hover text-sm capitalize font-bold flex justify-center items-center text-white py-2 px-4 border border-red-500 rounded-md bg-red-500 hover:text-red-500 hover:bg-white transition-all duration-500"
+            className="bounce-up-on-hover text-sm capitalize font-bold flex justify-center items-center text-white py-2 px-4 border border-red-500 rounded-full bg-red-500 hover:text-red-500 hover:bg-white transition-all duration-500"
             href={process.env.REACT_APP_MAIL_TO}
           >
             Gmail
