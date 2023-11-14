@@ -11,7 +11,7 @@ const Services: React.FC = () => {
   return (
     <div
       id="services"
-      className="relative bg-gray-50 h-screen w-full md:py-20 border-t md:p-20"
+      className="relative bg-gray-50 min-h-screen w-full md:py-20 border-t md:p-20"
     >
       <p className="uppercase text-center py-10 font-extrabold text-sky-900 text-lg">
         Services

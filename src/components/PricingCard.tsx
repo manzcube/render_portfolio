@@ -15,7 +15,7 @@ const PricingCard: React.FC<PricingPlan> = ({
   title,
 }) => {
   return (
-    <div className="rounded-md div-shadow max-w-sm mx-auto bg-white p-10 flex flex-col justify-between items-center">
+    <div className="rounded-md m-5 div-shadow max-w-sm mx-auto bg-white p-10 flex flex-col justify-between items-center">
       <img src={image} className="w-44" alt="" />
       <p className="text-center uppercase text-xl text-gray-800 font-extrabold mt-5">
         {title}
