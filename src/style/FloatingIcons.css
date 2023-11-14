@@ -3,8 +3,10 @@
 .floating-stack-icons {
   top: 0;
   left: 0;
+  position: absolute;
+  height: 100vh;
   width: 100%;
-  height: 100%;
+  z-index: -1;
   pointer-events: none; /* To allow clicks to pass through to elements below */
 }
 
@@ -46,156 +48,156 @@
 /* Define keyframes for floating animation */
 @keyframes floatIcon1 {
   0% {
-    transform: translate(80vh, 10vh);
+    transform: translate(80vw, 10vh);
   }
   25% {
-    transform: translate(90vh, 70vh);
+    transform: translate(90vw, 70vh);
   }
   50% {
-    transform: translate(40vh, 90vh);
+    transform: translate(40vw, 90vh);
   }
   75% {
-    transform: translate(0vh, 40vh);
+    transform: translate(0vw, 40vh);
   }
   100% {
-    transform: translate(80vh, 10vh);
+    transform: translate(80vw, 10vh);
   }
 }
 @keyframes floatIcon2 {
   0% {
-    transform: translate(70vh, 10vh);
+    transform: translate(70vw, 10vh);
   }
   25% {
-    transform: translate(0vh, 70vh);
+    transform: translate(0vw, 70vh);
   }
   50% {
-    transform: translate(50vh, 90vh);
+    transform: translate(50vw, 90vh);
   }
   75% {
-    transform: translate(90vh, 40vh);
+    transform: translate(90vw, 40vh);
   }
   100% {
-    transform: translate(70vh, 10vh);
+    transform: translate(70vw, 10vh);
   }
 }
 @keyframes floatIcon3 {
   0% {
-    transform: translate(10vh, 80vh);
+    transform: translate(10vw, 80vh);
   }
   25% {
-    transform: translate(80vh, 20vh);
+    transform: translate(80vw, 20vh);
   }
   50% {
-    transform: translate(10vh, 10vh);
+    transform: translate(10vw, 10vh);
   }
   75% {
-    transform: translate(40vh, 40vh);
+    transform: translate(40vw, 40vh);
   }
   100% {
-    transform: translate(10vh, 80vh);
+    transform: translate(10vw, 80vh);
   }
 }
 
 @keyframes floatIcon4 {
   0% {
-    transform: translate(50vh, 10vh);
+    transform: translate(50vw, 10vh);
   }
   25% {
-    transform: translate(80vh, 50vh);
+    transform: translate(80vw, 50vh);
   }
   50% {
-    transform: translate(90vh, 90vh);
+    transform: translate(90vw, 90vh);
   }
   75% {
-    transform: translate(10vh, 20vh);
+    transform: translate(10vw, 20vh);
   }
   100% {
-    transform: translate(50vh, 10vh);
+    transform: translate(50vw, 10vh);
   }
 }
 @keyframes floatIcon5 {
   0% {
-    transform: translate(40vh, 10vh);
+    transform: translate(40vw, 10vh);
   }
   25% {
-    transform: translate(10vh, 10vh);
+    transform: translate(10vw, 10vh);
   }
   50% {
-    transform: translate(60vh, 90vh);
+    transform: translate(60vw, 90vh);
   }
   75% {
-    transform: translate(70vh, 30vh);
+    transform: translate(70vw, 30vh);
   }
   100% {
-    transform: translate(40vh, 10vh);
+    transform: translate(40vw, 10vh);
   }
 }
 @keyframes floatIcon6 {
   0% {
-    transform: translate(30vh, 90vh);
+    transform: translate(30vw, 90vh);
   }
   25% {
-    transform: translate(50vh, 40vh);
+    transform: translate(50vw, 40vh);
   }
   50% {
-    transform: translate(20vh, 10vh);
+    transform: translate(20vw, 10vh);
   }
   75% {
-    transform: translate(90vh, 60vh);
+    transform: translate(90vw, 60vh);
   }
   100% {
-    transform: translate(30vh, 90vh);
+    transform: translate(30vw, 90vh);
   }
 }
 @keyframes floatIcon7 {
   0% {
-    transform: translate(20vh, 10vh);
+    transform: translate(20vw, 10vh);
   }
   25% {
-    transform: translate(60vh, 90vh);
+    transform: translate(60vw, 90vh);
   }
   50% {
-    transform: translate(10vh, 10vh);
+    transform: translate(10vw, 10vh);
   }
   75% {
-    transform: translate(80vh, 90vh);
+    transform: translate(80vw, 90vh);
   }
   100% {
-    transform: translate(20vh, 10vh);
+    transform: translate(20vw, 10vh);
   }
 }
 @keyframes floatIcon8 {
   0% {
-    transform: translate(10vh, 70vh);
+    transform: translate(10vw, 70vh);
   }
   25% {
-    transform: translate(40vh, 10vh);
+    transform: translate(40vw, 10vh);
   }
   50% {
-    transform: translate(70vh, 90vh);
+    transform: translate(70vw, 90vh);
   }
   75% {
-    transform: translate(50vh, 10vh);
+    transform: translate(50vw, 10vh);
   }
   100% {
-    transform: translate(10vh, 70vh);
+    transform: translate(10vw, 70vh);
   }
 }
 
 @keyframes floatIcon9 {
   0% {
-    transform: translate(70vh, 10vh);
+    transform: translate(70vw, 10vh);
   }
   25% {
-    transform: translate(90vh, 60vh);
+    transform: translate(90vw, 60vh);
   }
   50% {
-    transform: translate(10vh, 90vh);
+    transform: translate(10vw, 90vh);
   }
   75% {
-    transform: translate(0vh, 20vh);
+    transform: translate(0vw 20vh);
   }
   100% {
-    transform: translate(70vh, 10vh);
+    transform: translate(70vw, 10vh);
   }
 }

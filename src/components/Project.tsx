@@ -16,7 +16,7 @@ const Project: React.FC<Project> = ({ title, subtitle, image, url }) => {
     <a
       target="_blank"
       href={url}
-      className="Project m-5 md:m-20 max-w-[50ch]"
+      className="Project m-5 max-w-[50ch]"
       onMouseEnter={() => setOnHover(true)}
       onMouseLeave={() => setOnHover(false)}
     >
