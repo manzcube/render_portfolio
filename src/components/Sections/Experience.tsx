@@ -6,6 +6,7 @@ import Project from "../Project";
 // Media
 import skualo from "../../resources/skualo.png";
 import mm from "../../resources/mm.png";
+import mido from "../../resources/mido.png";
 
 const Experience: React.FC = () => {
   return (
@@ -28,6 +29,12 @@ const Experience: React.FC = () => {
           title="Mixing Media Design products agency "
           subtitle="Design products agency "
           url="https://mixing-media.web.app"
+        />
+        <Project
+          image={mido}
+          title="Mido Worflow application"
+          subtitle="Organize employees, activities and shifts using drag&drop"
+          url="https://mido.onrender.com"
         />
       </div>
     </div>
