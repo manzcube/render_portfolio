@@ -23,8 +23,8 @@ const Service: React.FC<Service> = ({
   return (
     <div className={` ${black ? "text-gray-200" : "text-gray-800"}`}>
       <img
-        className={`max-w-[20ch] mx-auto mt-20 transition-all duration-300 ${
-          seeMoreDropDown ? "max-w-[10ch]" : ""
+        className={`mx-auto mt-20 transition-all duration-300 ${
+          seeMoreDropDown ? "max-w-[10ch]" : "max-w-[20ch] "
         }`}
         src={image}
         alt="webistes-landing-pages-services-icon"
@@ -66,30 +66,7 @@ const Service: React.FC<Service> = ({
           black ? "bg-black" : "bg-white"
         } px-20 bottom-0 absolute w-full`}
       >
-        {seeMoreDropDown ? (
-          <div className="flex gap-20">
-            <button
-              onClick={() => setSeeMoreDropDown(!seeMoreDropDown)}
-              className={`py-2 w-full px-4 border transition-all duration-300 active:scale-95 ${
-                black
-                  ? "border-white hover:bg-white hover:text-black"
-                  : "border-black hover:bg-black hover:text-white"
-              }`}
-            >
-              {seeMoreDropDown ? "See Less" : "See More"}
-            </button>
-            <button
-              onClick={() => setSeeMoreDropDown(!seeMoreDropDown)}
-              className={`py-2 w-full px-4 border transition-all duration-300 active:scale-95 ${
-                black
-                  ? "border-white hover:bg-white hover:text-black"
-                  : "border-black hover:bg-black hover:text-white"
-              }`}
-            >
-              Contact Me
-            </button>
-          </div>
-        ) : (
+        <div className="flex gap-20">
           <button
             onClick={() => setSeeMoreDropDown(!seeMoreDropDown)}
             className={`py-2 w-full px-4 border transition-all duration-300 active:scale-95 ${
@@ -100,7 +77,7 @@ const Service: React.FC<Service> = ({
           >
             {seeMoreDropDown ? "See Less" : "See More"}
           </button>
-        )}
+        </div>
       </div>
     </div>
   );
