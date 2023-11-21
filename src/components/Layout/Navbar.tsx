@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
       {/* <img src={logo} className="w-8" alt="" /> */}
       <Link
         to="/"
-        className="font-bold text-xs lg:text-lg lg:tracking-widest text-white ml-8 lg:ml-44"
+        className="font-bold text-xs lg:text-lg lg:tracking-widest text-white ml-6"
       >
         MANZCUBE
       </Link>

@@ -1,5 +1,8 @@
 import React from "react";
 
+// Style
+import "../../style/Components.css";
+
 // Components
 import PricingCard from "../PricingCard";
 
@@ -11,12 +14,12 @@ const Services: React.FC = () => {
   return (
     <div
       id="services"
-      className="relative bg-gray-50 min-h-screen w-full md:py-20 border-t md:p-20"
+      className="relative flex flex-col lg:flex-row min-h-screen w-full"
     >
-      <p className="uppercase text-center py-10 font-extrabold text-sky-900 text-lg">
+      <p className="absolute w-full text-center mt-10 text-5xl font-extrabold uppercase services-text">
         Services
       </p>
-      <div className="flex flex-wrap">
+      <div className="w-full lg:w-1/2 bg-black min-h-screen pt-24 pb-10 p-5 lg:p-20">
         <PricingCard
           image={rubik}
           title="Websites and Landing pages"
@@ -28,6 +31,8 @@ const Services: React.FC = () => {
           ]}
           text="Start your online presence with our Basic Tier, perfect for creating user-friendly websites and eye-catching landing pages."
         />
+      </div>
+      <div className="w-full lg:w-1/2 bg-white h-screen p-5 lg:p-20">
         <PricingCard
           image={brain}
           title="Custom Solutions"

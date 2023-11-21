@@ -16,18 +16,14 @@ const Project: React.FC<Project> = ({ title, subtitle, image, url }) => {
     <a
       target="_blank"
       href={url}
-      className="Project m-5 max-w-[50ch]"
+      className="Project m-5 max-w-[50ch] div-shadow rounded"
       onMouseEnter={() => setOnHover(true)}
       onMouseLeave={() => setOnHover(false)}
     >
-      <div className="text-sm sm:text-md md:text-lg font-bold">{title}</div>
-      <div className="mb-5 text-xs text-gray-500 sm:text-xs md:text-sm">
-        {subtitle}
-      </div>
       <div className="relative">
         <img
           src={image}
-          className={`object-cover border shadow-xl rounded cursor-pointer ${
+          className={`object-cover border rounded-top cursor-pointer ${
             onHover ? "brightness-50" : ""
           }`}
           alt=""
@@ -39,6 +35,12 @@ const Project: React.FC<Project> = ({ title, subtitle, image, url }) => {
         >
           Click here to visit website
         </span>
+      </div>
+      <div className="p-5">
+        <div className="text-sm sm:text-md md:text-lg font-bold">{title}</div>
+        <div className="mb-5 text-xs text-gray-500 sm:text-xs md:text-sm">
+          {subtitle}
+        </div>
       </div>
     </a>
   );

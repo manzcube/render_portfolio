@@ -6,9 +6,10 @@
   padding: 1ch 2ch;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  &:hover {
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
-  }
+}
+
+.button:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card-width {
@@ -17,4 +18,67 @@
 
 .div-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Experience */
+#experience-section-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.2ch;
+  letter-spacing: 1ch;
+  padding: 20px 0;
+}
+
+@media screen and (min-width: 540px) {
+  #experience-section-title {
+    font-size: 2ch;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #experience-section-title {
+    font-size: 2.5ch;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  #experience-section-title {
+    font-size: 3ch;
+  }
+}
+
+@media screen and (min-width: 1268px) {
+  #experience-section-title {
+    font-size: 4ch;
+  }
+}
+
+/* Experience > Projects */
+
+.Project:hover img {
+  filter: brightness(50%);
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.Project:hover span {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+/* Services */
+.services-text {
+  position: absolute;
+  background: linear-gradient(90deg, white 50%, black 50%);
+  background-clip: text;
+  color: transparent;
+}
+
+@media screen and (max-width: 1024px) {
+  .services-text {
+    position: absolute;
+    background: linear-gradient(90deg, white 50%, white 50%);
+    background-clip: text;
+    color: transparent;
+  }
 }

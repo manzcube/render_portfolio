@@ -64,21 +64,30 @@ const Introduction: React.FC = () => {
 
         {/* Languages */}
         <div className="flex gap-10 px-2 pt-4">
-          <img
-            className="h-4 w-4 animated-bouncing"
-            src={eng}
-            alt="I speak english"
-          />
-          <img
-            className="h-4 w-4 animated-bouncing-delayed"
-            src={esp}
-            alt="I speak spanish"
-          />
-          <img
-            className="h-4 w-4 animated-bouncing-delayed-2 rounded-sm opacity-90"
-            src={cat}
-            alt="I speak catalan"
-          />
+          <div className="relative language-hover-description">
+            <img
+              className="h-4 w-4 animated-bouncing"
+              src={eng}
+              alt="I speak english"
+            />
+            <p>C1 IELTS Certificate</p>
+          </div>
+          <div className="relative language-hover-description">
+            <img
+              className="h-4 w-4 animated-bouncing-delayed"
+              src={esp}
+              alt="I speak spanish"
+            />
+            <p>Native Speaker</p>
+          </div>
+          <div className="relative language-hover-description">
+            <img
+              className="h-4 w-4 animated-bouncing-delayed-2 rounded-sm opacity-90"
+              src={cat}
+              alt="I speak catalan"
+            />
+            <p>Native Speaker</p>
+          </div>
         </div>
         <div className="flex pt-3 md:pt-10 md:pt-0 items-center gap-8">
           <a

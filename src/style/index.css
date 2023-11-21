@@ -48,6 +48,34 @@ code {
   background: linear-gradient(to bottom, rgb(59 130 246), white);
 }
 
+/* Languages descriptions */
+.language-hover-description p {
+  position: absolute;
+  top: 3.5ch;
+  z-index: 2;
+  border-radius: 10px;
+  display: none;
+  padding: 2px 4px;
+  font-size: 0.8ch;
+  font-weight: 400;
+  color: #4f4f4f;
+  background-color: #dfdfdf;
+}
+
+.language-hover-description:hover p {
+  animation: FadeIn 1s;
+  display: flex;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 #skill-features {
   display: flex;
   gap: 15px;
@@ -85,7 +113,7 @@ code {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
   }
 }
 
@@ -99,26 +127,6 @@ code {
   }
 }
 
-.vertical-line {
-  position: absolute;
-  content: "";
-  width: 2px; /* Width of the line */
-  background-color: #ff0000; /* Color of the line */
-  height: 100%; /* Make it cover the full height of the page */
-  top: 0;
-  left: 20px; /* Adjust this value to position the line where you want it initially */
-  transition: left 0.5s ease; /* Add a smooth transition effect */
-}
-
-.Project:hover img {
-  filter: brightness(50%);
-  transition: transform 0.5s ease, filter 0.5s ease;
-}
-
-.Project:hover span {
-  opacity: 1;
-  transition: opacity 0.5s ease;
-}
 
 @media screen and (max-width: 400px) {
   #skill-features span {

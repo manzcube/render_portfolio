@@ -44,10 +44,10 @@ const SideNavbar = () => {
   }, []);
 
   return (
-    <div className="hidden sm:flex h-screen bg-sky-900 flex flex-col fixed left-0 w-20 py-44 justify-between items-center">
+    <div className="hidden sm:flex h-screen bg-sky-950 flex flex-col fixed left-0 w-20 py-44 justify-between items-center">
       <a
         className={`${
-          activeSection === "introduction" ? "bg-blue-400 p-2" : "p-4"
+          activeSection === "introduction" ? "bg-sky-800 p-2" : "p-4"
         } transition-all duration-300 rounded-md`}
         href="#introduction"
       >
@@ -69,7 +69,7 @@ const SideNavbar = () => {
 
       <a
         className={`${
-          activeSection === "experience" ? "bg-blue-400 p-2" : "p-4"
+          activeSection === "experience" ? "bg-sky-800 p-2" : "p-4"
         } transition-all duration-300 rounded-md`}
         href="#experience"
       >
@@ -90,7 +90,7 @@ const SideNavbar = () => {
       </a>
       <a
         className={`${
-          activeSection === "services" ? "bg-blue-400 p-2" : "p-4"
+          activeSection === "services" ? "bg-sky-800 p-2" : "p-4"
         } transition-all duration-300 rounded-md`}
         href="#services"
       >
