@@ -14,7 +14,7 @@ const Dashboard: React.FC = () => {
   return (
     <div className="text-white relative">
       <SideNavbar />
-      <div className="sm:ml-20 pb-20 bg-gray-50 overflow-hidden">
+      <div className="sm:ml-20 bg-gray-50 overflow-hidden">
         <Header />
         <Introduction />
         <Experience />

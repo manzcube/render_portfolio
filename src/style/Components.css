@@ -45,12 +45,7 @@
 @media screen and (min-width: 1100px) {
   #experience-section-title {
     font-size: 3ch;
-  }
-}
-
-@media screen and (min-width: 1268px) {
-  #experience-section-title {
-    font-size: 4ch;
+    padding: 40px 0;
   }
 }
 
@@ -67,8 +62,10 @@
 }
 
 /* Services */
+
 .services-text {
   position: absolute;
+  font-size: 4ch;
   background: linear-gradient(90deg, white 50%, black 50%);
   background-clip: text;
   color: transparent;

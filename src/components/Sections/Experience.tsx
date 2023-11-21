@@ -5,7 +5,7 @@ import "../../style/Components.css";
 
 // Components
 import Project from "../Project";
-import HorizontalProject from "../HorizontalProject";
+
 // Media
 import skualo from "../../resources/skualo.png";
 import mm from "../../resources/mm.png";

@@ -51,7 +51,7 @@ code {
 /* Languages descriptions */
 .language-hover-description p {
   position: absolute;
-  top: 3.5ch;
+  top: 4.5ch;
   z-index: 2;
   border-radius: 10px;
   display: none;
@@ -126,7 +126,6 @@ code {
     transform: translateY(5px);
   }
 }
-
 
 @media screen and (max-width: 400px) {
   #skill-features span {
