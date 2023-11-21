@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="w-full bottom-0 flex justify-between items-center py-2 px-8 md:px-24 text-xs text-sky-200 bg-sky-800">
-      <p className="flex items-center">© mancube copyright </p>
+    <footer className="w-full bottom-0 flex flex-col md:flex-row  justify-between items-center py-2 px-8 md:px-24 text-xs text-sky-200 bg-sky-800">
+      <p className="flex items-center py-5">© mancube copyright </p>
       <div className="flex">
         <div>
           <a

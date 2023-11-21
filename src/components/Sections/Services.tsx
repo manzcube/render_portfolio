@@ -14,12 +14,12 @@ const Services: React.FC = () => {
   return (
     <div
       id="services"
-      className="relative flex flex-col lg:flex-row h-screen w-full"
+      className="relative flex flex-col md:flex-row min-h-screen md:h-screen w-full"
     >
-      <p className="absolute w-full text-center mt-10 font-extrabold uppercase services-text">
+      <p className="absolute z-20 w-full text-center mt-10 font-extrabold uppercase services-text">
         Services
       </p>
-      <div className="w-full relative lg:w-1/2 bg-black min-h-screen pt-24 pb-10 p-5 lg:p-20">
+      <div className="w-full relative md:w-1/2 bg-black min-h-screen sm:px-10 pt-24 pb-10 p-5 md:py-20">
         <Service
           image={rubik}
           from={890}
@@ -40,7 +40,7 @@ const Services: React.FC = () => {
                high-speed, cost-effective, and entirely customized solutions."
         />
       </div>
-      <div className="w-full relative lg:w-1/2 bg-white min-h-screen p-5 lg:p-20">
+      <div className="w-full relative md:w-1/2 bg-white min-h-screen p-5 sm:px-10 md:py-20">
         <Service
           image={brain}
           from={1390}

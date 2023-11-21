@@ -23,16 +23,18 @@ const Service: React.FC<Service> = ({
   return (
     <div className={` ${black ? "text-gray-200" : "text-gray-800"}`}>
       <img
-        className={`mx-auto mt-20 transition-all duration-300 ${
+        className={`mx-auto ${
+          black ? "sm:mt-10 md:mt-16" : "mt-28 md:mt-16"
+        } transition-all duration-300 ${
           seeMoreDropDown ? "max-w-[10ch]" : "max-w-[20ch] "
         }`}
         src={image}
         alt="webistes-landing-pages-services-icon"
       />
-      <h1 className="text-3xl uppercase my-10 text-center font-extrabold">
+      <h1 className="text-md lg:text-xl xl:text-3xl uppercase mt-5 lg:my-10 text-center font-extrabold">
         {title}
       </h1>
-      <p className="my-5 text-xs">{text}</p>
+      <p className="my-5 text-xs lg:tracking-wide">{text}</p>
       {seeMoreDropDown ? (
         <div className="see-more-div">
           {features.map((feature: string, index: number) => (
@@ -62,7 +64,7 @@ const Service: React.FC<Service> = ({
         ""
       )}
       <div
-        className={`left-0 h-36 ${
+        className={`left-0 h-32 md:h-16 lg:h-22 xl:h-36 ${
           black ? "bg-black" : "bg-white"
         } px-20 bottom-0 absolute w-full`}
       >
