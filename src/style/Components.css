@@ -25,7 +25,7 @@
   text-transform: uppercase;
   text-align: center;
   font-weight: 900;
-  font-size: 1.2ch;
+  font-size: 1.5ch;
   letter-spacing: 1ch;
   padding: 20px 0;
 }
@@ -79,6 +79,7 @@
     color: transparent;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .services-text {
     font-size: 4ch;

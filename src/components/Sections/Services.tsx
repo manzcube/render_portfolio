@@ -34,7 +34,7 @@ const Services: React.FC = () => {
           text="Start your online presence with a captivating website. I build visually stunning, high-speed, and cost-effective solutions from scratch."
         />
       </div>
-      <div className="w-full relative md:w-1/2 bg-white min-h-[100vh] p-5 sm:px-10 md:py-20">
+      <div className="w-full relative md:w-1/2 bg-white min-h-[120vh] md:min-h-screen p-5 sm:px-10 md:py-20">
         <Service
           image={brain}
           from={1390}
