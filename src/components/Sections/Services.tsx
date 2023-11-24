@@ -19,7 +19,7 @@ const Services: React.FC = () => {
       <p className="absolute z-20 w-full text-center mt-10 font-extrabold uppercase services-text">
         Services
       </p>
-      <div className="w-full relative md:w-1/2 bg-black min-h-screen sm:px-10 pt-24 pb-10 p-5 md:py-20">
+      <div className="w-full relative md:w-1/2 bg-black min-h-[100vh] sm:px-10 pt-24 pb-10 p-5 md:py-20">
         <Service
           image={rubik}
           from={890}
@@ -31,31 +31,22 @@ const Services: React.FC = () => {
             "Start-ups",
             "Single Page Applications",
           ]}
-          text="Begin establishing your online presence with
-           a stunning landing page, a single-page web application,
-            or a comprehensive website featuring multiple views to
-             elegantly showcase your products and services. I craft
-              websites from the ground up, leveraging my proven
-               infrastructure to deliver visually captivating, 
-               high-speed, cost-effective, and entirely customized solutions."
+          text="Start your online presence with a captivating website. I build visually stunning, high-speed, and cost-effective solutions from scratch."
         />
       </div>
-      <div className="w-full relative md:w-1/2 bg-white min-h-screen p-5 sm:px-10 md:py-20">
+      <div className="w-full relative md:w-1/2 bg-white min-h-[100vh] p-5 sm:px-10 md:py-20">
         <Service
           image={brain}
           from={1390}
           black={false}
           title="Custom Solutions"
           features={[
-            "Project Management Tools",
+            "Shift Management Tools",
             "Workflow Automation Applications",
             "Customer Relationship Management(CRM)",
             "Document Management Systems(DMS)",
           ]}
-          text="Elevate your business and organization by developing
-           custom software applications tailored to your unique needs
-            and demands. Enhance productivity, streamline client management,
-             and envision the features that can simplify your work—I'll bring them to life."
+          text="Boost your business with custom software. I bring your unique ideas to life, enhancing productivity and client management."
         />
       </div>
     </div>
