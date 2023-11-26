@@ -6,7 +6,7 @@ const Header: React.FC = () => {
     <p className="text-center pt-5 hidden sm:flex">
       <Link
         to="/"
-        className="font-extrabold text-xs md:text-xl text-center w-full lg:tracking-widest text-sky-900 animated-bouncing "
+        className="font-extrabold text-xs md:text-xl text-center w-full lg:tracking-widest text-sky-900 animated-scaling"
       >
         MANZCUBE
       </Link>

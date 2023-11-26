@@ -90,21 +90,25 @@ code {
 }
 
 .bounce-up-on-hover:hover {
-  animation: bounceUp 0.5s infinite;
+  animation: bounceUp 1s infinite;
 }
 
 .animated-bouncing-delayed {
-  animation: bounce 4s infinite;
+  animation: bounce 3s infinite;
   animation-delay: 1s;
 }
 
 .animated-bouncing-delayed-2 {
-  animation: bounce 4s infinite;
+  animation: bounce 3s infinite;
   animation-delay: 2s;
 }
 
 .animated-bouncing {
-  animation: bounce 4s infinite;
+  animation: bounce 3s infinite;
+}
+
+.animated-scaling {
+  animation: scale 2s infinite;
 }
 
 @keyframes bounceUp {
@@ -114,6 +118,16 @@ code {
   }
   50% {
     transform: translateY(-8px);
+  }
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    scale: 105%;
+  }
+  50% {
+    scale: 100%;
   }
 }
 

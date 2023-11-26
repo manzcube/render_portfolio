@@ -29,10 +29,18 @@ const Service: React.FC<Service> = ({
         src={image}
         alt="webistes-landing-pages-services-icon"
       />
-      <h1 className="text-md lg:text-xl xl:text-3xl uppercase mt-5 lg:mb-5 lg:mt-10 text-center font-extrabold">
+      <h1
+        className={`text-md lg:text-xl xl:text-3xl uppercase mt-5 lg:mb-5 lg:mt-10 text-center font-extrabold ${
+          black ? "text-white" : "text-gray-800"
+        }`}
+      >
         {title}
       </h1>
-      <p className="text-center mb-10 text-gray-500 text-xs lg:tracking-wide px-20">
+      <p
+        className={`text-center mb-10 ${
+          black ? "text-gray-300" : "text-gray-500"
+        } text-xs lg:tracking-wide px-20`}
+      >
         {text}
       </p>
       <div className="see-more-div">
@@ -56,16 +64,23 @@ const Service: React.FC<Service> = ({
           </li>
         ))}
         <p className="my-3 text-sm">
-          From <span className="font-bold text-lg">{from}AUD</span>
+          From{" "}
+          <span
+            className={`font-bold text-lg ${
+              black ? "text-white" : "text-gray-800"
+            }`}
+          >
+            {from}AUD
+          </span>
         </p>
       </div>
       {contactOpen ? (
         <div className="flex gap-5">
           <a
-            className={`py-2 text-center mt-5 w-full px-4 border transition-all duration-300 active:scale-95 ${
+            className={`rounded-full py-2 text-center mt-5 w-full px-4 border transition-all duration-300 active:scale-95 ${
               black
-                ? "border-white hover:bg-white hover:text-black"
-                : "border-black hover:bg-black hover:text-white"
+                ? "border-white hover:bg-white hover:text-gray-800"
+                : "border-gray-800 hover:bg-gray-800 hover:text-white"
             }`}
             target="_blank"
             rel="noreferrer"
@@ -74,10 +89,10 @@ const Service: React.FC<Service> = ({
             LinkedIn
           </a>
           <a
-            className={`py-2 text-center mt-5 w-full px-4 border transition-all duration-300 active:scale-95 ${
+            className={`rounded-full py-2 text-center mt-5 w-full px-4 border transition-all duration-300 active:scale-95 ${
               black
-                ? "border-white hover:bg-white hover:text-black"
-                : "border-black hover:bg-black hover:text-white"
+                ? "border-white hover:bg-white hover:text-gray-800"
+                : "border-gray-800 hover:bg-gray-800 hover:text-white"
             }`}
             target="_blank"
             rel="noreferrer"
@@ -89,10 +104,10 @@ const Service: React.FC<Service> = ({
       ) : (
         <button
           onClick={() => setContactOpen(!contactOpen)}
-          className={`py-2 mt-5 w-full px-4 border transition-all duration-300 active:scale-95 ${
+          className={`rounded-full py-2 mt-5 w-full px-4 border transition-all duration-300 active:scale-95 ${
             black
-              ? "border-white hover:bg-white hover:text-black"
-              : "border-black hover:bg-black hover:text-white"
+              ? "border-white text-white hover:bg-white hover:text-gray-800"
+              : "border-gray-800 hover:bg-gray-800 hover:text-white"
           }`}
         >
           I want to know more
