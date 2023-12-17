@@ -7,9 +7,16 @@ interface Project {
   subtitle: string;
   image: string;
   url: string;
+  iconsList: string[] | null;
 }
 
-const Project: React.FC<Project> = ({ title, subtitle, image, url }) => {
+const Project: React.FC<Project> = ({
+  title,
+  subtitle,
+  image,
+  url,
+  iconsList,
+}) => {
   const [onHover, setOnHover] = useState(false);
 
   return (
@@ -36,11 +43,17 @@ const Project: React.FC<Project> = ({ title, subtitle, image, url }) => {
           Click here to visit website
         </span>
       </div>
-      <div className="p-5">
+
+      <div className="p-5 pb-0">
         <div className="text-sm sm:text-md md:text-lg font-bold">{title}</div>
         <div className="mb-5 text-xs text-gray-500 sm:text-xs md:text-sm">
           {subtitle}
         </div>
+      </div>
+      <div className="flex w-full p-8 pt-0 gap-5">
+        {iconsList?.map((icon) => (
+          <img className="h-6" src={icon} alt="icon-image" />
+        ))}
       </div>
     </a>
   );
