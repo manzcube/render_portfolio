@@ -63,8 +63,8 @@ const Introduction: React.FC = () => {
             <p className="text-gray-700 animated-bouncing-delayed">Alzamora</p>
           </div>
           <p className="text-gray-500 text-xs lg:text-sm max-w-md font-semibold">
-            Experienced MERN FullStack developer with a passion for Golang
-            seeking professional opportunities in Sydney.
+            Experienced Web Developer with a passion for creating impactful
+            solutions, based in Sydney.
           </p>
           <p className="text-gray-500 text-xs lg:text-sm max-w-md font-semibold">
             Enthusiastic about Rubik's Cubes and spacecrafts.

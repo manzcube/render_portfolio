@@ -1,8 +1,10 @@
+// Lib
 import React, { useState } from "react";
 
+// Style
 import "../style/Components.css";
 
-interface Project {
+interface ProjectProps {
   title: string;
   subtitle: string;
   image: string;
@@ -10,7 +12,7 @@ interface Project {
   iconsList: string[] | null;
 }
 
-const Project: React.FC<Project> = ({
+const Project: React.FC<ProjectProps> = ({
   title,
   subtitle,
   image,
@@ -51,8 +53,8 @@ const Project: React.FC<Project> = ({
         </div>
       </div>
       <div className="flex w-full p-8 pt-0 gap-5">
-        {iconsList?.map((icon) => (
-          <img className="h-6" src={icon} alt="icon-image" />
+        {iconsList?.map((icon, i) => (
+          <img className="h-5" key={i} src={icon} alt="icon-image" />
         ))}
       </div>
     </a>

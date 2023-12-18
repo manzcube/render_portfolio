@@ -22,7 +22,7 @@ const Services: React.FC = () => {
       <div className="w-full relative md:w-1/2 bg-white min-h-[120vh] md:min-h-screen p-5 sm:px-10 md:py-20">
         <Service
           image={brain}
-          from={1390}
+          from={2400}
           black={false}
           title="Custom Solutions"
           features={[
@@ -37,7 +37,7 @@ const Services: React.FC = () => {
       <div className="w-full relative md:w-1/2 bg-gray-800 min-h-[100vh] sm:px-10 pt-24 pb-10 p-5 md:py-20">
         <Service
           image={rubik}
-          from={890}
+          from={1200}
           title="Websites and Landing pages"
           black={true}
           features={[

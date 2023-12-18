@@ -39,7 +39,7 @@ const Service: React.FC<Service> = ({
       <p
         className={`text-center mb-10 ${
           black ? "text-gray-300" : "text-gray-500"
-        } text-xs lg:tracking-wide px-20`}
+        } text-xs lg:tracking-wide px-8 lg:px-20`}
       >
         {text}
       </p>
@@ -64,13 +64,13 @@ const Service: React.FC<Service> = ({
           </li>
         ))}
         <p className="my-3 text-sm">
-          From{" "}
+          For{" "}
           <span
             className={`font-bold text-lg ${
               black ? "text-white" : "text-gray-800"
             }`}
           >
-            {from}AUD
+            {from} AUD
           </span>
         </p>
       </div>

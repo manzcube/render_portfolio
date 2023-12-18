@@ -1,9 +1,7 @@
 import React from "react";
 
-interface TechProps {
-  image: string;
-  progress: string;
-}
+// Constants
+import TechProps from "../interfaces/types";
 
 const TechLang: React.FC<TechProps> = ({ image, progress }) => {
   return (
