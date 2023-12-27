@@ -45,7 +45,7 @@ const Service: React.FC<Service> = ({
       </p>
       <div className="see-more-div">
         {features.map((feature: string, index: number) => (
-          <li key={index} className="flex items-center gap-2 text-xs">
+          <li key={index} className="flex items-center gap-2 my-1 text-xs">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

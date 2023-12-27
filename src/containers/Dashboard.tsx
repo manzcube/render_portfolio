@@ -17,8 +17,8 @@ const Dashboard: React.FC = () => {
       <div className="sm:ml-20 bg-gray-50 overflow-hidden">
         <Header />
         <Introduction />
-        <Experience />
         <Services />
+        <Experience />
       </div>
     </div>
   );

@@ -22,18 +22,15 @@ const Navbar: React.FC = () => {
         const experienceSectionTop = experienceSection.offsetTop - 100;
 
         // Determine which section is in view
-        if (
-          scrollY >= introductionSectionTop &&
-          scrollY < experienceSectionTop
-        ) {
+        if (scrollY >= introductionSectionTop && scrollY < servicesSectionTop) {
           setActiveSection("introduction");
         } else if (
-          scrollY >= experienceSectionTop &&
-          scrollY < servicesSectionTop
+          scrollY >= servicesSectionTop &&
+          scrollY < experienceSectionTop
         ) {
-          setActiveSection("experience");
-        } else {
           setActiveSection("services");
+        } else {
+          setActiveSection("experience");
         }
       }
     };
@@ -77,14 +74,7 @@ const Navbar: React.FC = () => {
         >
           Dashboard
         </button>
-        <button
-          className={`${
-            activeSection === "experience" ? "bg-sky-500 shadow-inner" : ""
-          } p-2 rounded text-white transition-all duration-500`}
-          onClick={() => scrollToSection("experience")}
-        >
-          Experience
-        </button>
+
         <button
           className={`${
             activeSection === "services" ? "bg-sky-500 shadow-inner" : ""
@@ -92,6 +82,14 @@ const Navbar: React.FC = () => {
           onClick={() => scrollToSection("services")}
         >
           Services
+        </button>
+        <button
+          className={`${
+            activeSection === "experience" ? "bg-sky-500 shadow-inner" : ""
+          } p-2 rounded text-white transition-all duration-500`}
+          onClick={() => scrollToSection("experience")}
+        >
+          Experience
         </button>
       </div>
     </div>
