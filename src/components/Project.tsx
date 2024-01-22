@@ -25,7 +25,7 @@ const Project: React.FC<ProjectProps> = ({
     <a
       target="_blank"
       href={url}
-      className="Project m-5 max-w-[50ch] div-shadow rounded"
+      className="Project"
       onMouseEnter={() => setOnHover(true)}
       onMouseLeave={() => setOnHover(false)}
     >
@@ -45,7 +45,6 @@ const Project: React.FC<ProjectProps> = ({
           Click here to visit website
         </span>
       </div>
-
       <div className="p-5 pb-0">
         <div className="text-sm sm:text-md md:text-lg font-bold">{title}</div>
         <div className="mb-5 text-xs text-gray-500 sm:text-xs md:text-sm">

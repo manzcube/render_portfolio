@@ -1,23 +1,48 @@
-.button {
-  background: rgb(66, 133, 244);
-  color: white;
-  border: 1px solid rgb(66, 133, 244);
-  border-radius: 5px;
-  padding: 1ch 2ch;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
-
-.button:hover {
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
-}
-
 .card-width {
   max-width: 40ch;
 }
 
-.div-shadow {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+/* Introduction */
+
+/* Languages descriptions */
+.language-hover-description p {
+  position: absolute;
+  top: 4.5ch;
+  z-index: 2;
+  border-radius: 10px;
+  display: none;
+  padding: 2px 4px;
+  font-size: 0.8ch;
+  font-weight: 400;
+  color: #4f4f4f;
+  background-color: #dfdfdf;
+}
+
+.language-hover-description:hover p {
+  animation: FadeIn 1s;
+  display: flex;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#skill-features {
+  display: flex;
+  gap: 15px;
+  font-weight: 400;
+}
+#skill-features span {
+  text-transform: lowercase;
+  font-size: 10px;
+  padding: 2px 6px;
+  background: #e0e0e0;
+  border-radius: 12px;
 }
 
 /* Experience */
@@ -30,26 +55,18 @@
   padding: 20px 0;
 }
 
-@media screen and (min-width: 540px) {
-  #experience-section-title {
-    font-size: 2ch;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  #experience-section-title {
-    font-size: 2.5ch;
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  #experience-section-title {
-    font-size: 3ch;
-    padding: 40px 0;
-  }
-}
-
 /* Experience > Projects */
+.Project {
+  box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.2);
+  max-width: 50ch;
+  margin: 3ch;
+  border-radius: 5px;
+  border: 1px solid rgb(208, 208, 208);
+}
+
+.Project img {
+  border-radius: 5px 5px 0 0;
+}
 
 .Project:hover img {
   filter: brightness(50%);
@@ -72,6 +89,8 @@
   color: transparent;
 }
 
+/* Media Queries */
+
 @media screen and (max-width: 768px) {
   .services-text {
     position: absolute;
@@ -84,5 +103,30 @@
 @media screen and (min-width: 1024px) {
   .services-text {
     font-size: 4ch;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #skill-features span {
+    font-size: 8px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  #experience-section-title {
+    font-size: 2ch;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #experience-section-title {
+    font-size: 2.5ch;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  #experience-section-title {
+    font-size: 3ch;
+    padding: 40px 0;
   }
 }
