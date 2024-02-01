@@ -32,7 +32,7 @@ const Project: React.FC<ProjectProps> = ({
       <div className="relative">
         <img
           src={image}
-          className={`object-cover border rounded-top cursor-pointer ${
+          className={`object-cover border rounded-top cursor-pointer${
             onHover ? "brightness-50" : ""
           }`}
           alt=""

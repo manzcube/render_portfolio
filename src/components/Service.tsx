@@ -77,7 +77,7 @@ const Service: React.FC<Service> = ({
       {contactOpen ? (
         <div className="flex gap-5">
           <a
-            className={`rounded-full py-2 text-center mt-5 w-full px-4 border transition-all duration-300 active:scale-95 ${
+            className={`rounded-md py-2 text-center mt-5 w-full px-4 border transition-all duration-300 active:scale-95 ${
               black
                 ? "border-white hover:bg-white hover:text-gray-800"
                 : "border-gray-800 hover:bg-gray-800 hover:text-white"
@@ -89,7 +89,7 @@ const Service: React.FC<Service> = ({
             LinkedIn
           </a>
           <a
-            className={`rounded-full py-2 text-center mt-5 w-full px-4 border transition-all duration-300 active:scale-95 ${
+            className={`rounded-md py-2 text-center mt-5 w-full px-4 border transition-all duration-300 active:scale-95 ${
               black
                 ? "border-white hover:bg-white hover:text-gray-800"
                 : "border-gray-800 hover:bg-gray-800 hover:text-white"
@@ -104,13 +104,13 @@ const Service: React.FC<Service> = ({
       ) : (
         <button
           onClick={() => setContactOpen(!contactOpen)}
-          className={`rounded-full py-2 mt-5 w-full px-4 border transition-all duration-300 active:scale-95 ${
+          className={`rounded-md py-2 mt-5 w-full px-4 border transition-all duration-300 active:scale-95 ${
             black
               ? "border-white text-white hover:bg-white hover:text-gray-800"
               : "border-gray-800 hover:bg-gray-800 hover:text-white"
           }`}
         >
-          I want to know more
+          Let's talk!
         </button>
       )}
     </div>

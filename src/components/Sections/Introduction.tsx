@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import FloatingIcons from "../FloatingIcons";
 
 // Pictures
-import pic from "../../resources/profile_picture.jpg";
+import pic from "../../resources/profile_picture2.png";
 import linkedin from "../../resources/linkedin.png";
 import github from "../../resources/github.png";
 import twitter from "../../resources/twitter.png";
@@ -38,7 +38,7 @@ const Introduction: React.FC = () => {
   }, []);
 
   const opacity = 1 - scrollY / 2 / window.innerHeight;
-  const scale = 1 - scrollY / 2 / window.innerHeight;
+  const scale = 1 - scrollY / 8 / window.innerHeight;
   return (
     <div
       style={{
@@ -48,23 +48,31 @@ const Introduction: React.FC = () => {
     >
       <div
         id="introduction"
-        className="h-screen w-full z-20 relative flex flex-col lg:flex-row justify-center items-center gap-10 text-blue-500 lg:pt-5 p-5 pt-16 sm:pt-5"
+        className="h-screen w-full z-20 relative flex flex-col lg:flex-row justify-center items-center gap-10 text-blue-500 lg:pt-0 p-5 pt-16 sm:pt-5"
       >
         <FloatingIcons />
-        <img
-          src={pic}
-          alt="pic"
-          className="w-32 lg:w-56 xl:w-72 h-auto object-cover shadow-2xl rounded-full"
-        />
+        <div className="flex flex-col gap-5">
+          <img
+            src={pic}
+            alt="pic"
+            className="w-32 lg:w-56 xl:w-72 h-auto object-cover shadow-2xl rounded-full"
+          />
+          <a
+            className="py-3 px-5 w-fit mx-auto text-xs bg-gray-700 text-white rounded-xl border border-gray-700 hover:opacity-90 hover:bg-white hover:text-gray-700 transition-all duration-500"
+            href="#services"
+          >
+            Check out my Services
+          </a>
+        </div>
         <div className="p-4 text-gray-700 space-y-2 md:space-y-5 uppercase font-extrabold">
-          <p className="text-sm lg:text-md">Hi there! i'm</p>
+          <p className="text-md lg:text-mlg">Hi there! i'm</p>
           <div className="text-3xl lg:text-6xl space-x-5 flex items-center">
             <p className="text-blue-700 animated-bouncing">Marc</p>
             <p className="text-gray-700 animated-bouncing-delayed">Alzamora</p>
           </div>
           <p className="text-gray-500 text-xs lg:text-sm max-w-md font-semibold">
-            Experienced Web Developer with a passion for creating impactful
-            solutions, based in Sydney.
+            Experienced Full Stack Developer with a passion for creating
+            impactful solutions, based in Sydney.
           </p>
           <p className="text-gray-500 text-xs lg:text-sm max-w-md font-semibold">
             Enthusiastic about Rubik's Cubes and spacecrafts.

@@ -58,7 +58,6 @@ const Navbar: React.FC = () => {
       className="w-full fixed flex sm:hidden justify-between items-center z-30 p-3 bg-sky-700"
       id="Navbar"
     >
-      {/* <img src={logo} className="w-8" alt="" /> */}
       <Link
         to="/"
         className="font-bold text-xs lg:text-lg lg:tracking-widest text-white ml-6"

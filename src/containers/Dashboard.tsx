@@ -9,6 +9,8 @@ import Header from "../components/Layout/Header.tsx";
 import Introduction from "../components/Sections/Introduction.tsx";
 import Experience from "../components/Sections/Experience.tsx";
 import Services from "../components/Sections/Services.tsx";
+import WebServices from "../components/Sections/WebServices.tsx";
+import RubikServices from "../components/Sections/RubikServices.tsx";
 
 const Dashboard: React.FC = () => {
   return (
@@ -18,6 +20,8 @@ const Dashboard: React.FC = () => {
         <Header />
         <Introduction />
         <Services />
+        {/* <WebServices />
+        <RubikServices /> */}
         <Experience />
       </div>
     </div>
