@@ -51,19 +51,11 @@ const Introduction: React.FC = () => {
         className="h-screen w-full z-20 relative flex flex-col lg:flex-row justify-center items-center gap-10 text-blue-500 lg:pt-0 p-5 pt-16 sm:pt-5"
       >
         <FloatingIcons />
-        <div className="flex flex-col gap-5">
-          <img
-            src={pic}
-            alt="pic"
-            className="w-32 lg:w-56 xl:w-72 h-auto object-cover shadow-2xl rounded-full"
-          />
-          <a
-            className="py-3 px-5 w-fit mx-auto text-xs bg-gray-700 text-white rounded-xl border border-gray-700 hover:opacity-90 hover:bg-white hover:text-gray-700 transition-all duration-500"
-            href="#services"
-          >
-            Check out my Services
-          </a>
-        </div>
+        <img
+          src={pic}
+          alt="pic"
+          className="w-32 lg:w-56 xl:w-72 h-auto object-cover shadow-2xl rounded-full"
+        />
         <div className="p-4 text-gray-700 space-y-2 md:space-y-5 uppercase font-extrabold">
           <p className="text-md lg:text-mlg">Hi there! i'm</p>
           <div className="text-3xl lg:text-6xl space-x-5 flex items-center">
@@ -72,28 +64,15 @@ const Introduction: React.FC = () => {
           </div>
           <p className="text-gray-500 text-xs lg:text-sm max-w-md font-semibold">
             Experienced Full Stack Developer with a passion for creating
-            impactful solutions, based in Sydney.
+            impactful solutions.
           </p>
-          <p className="text-gray-500 text-xs lg:text-sm max-w-md font-semibold">
+          {/* <p className="text-gray-900 text-xs lg:text-sm max-w-md font-thin">
             Enthusiastic about Rubik's Cubes and spacecrafts.
-          </p>
+          </p> */}
           <p id="skill-features">
-            <span className="flex items-center gap-1">
-              <img src={time} className="w-3" alt="" />
-              Time Management
+            <span className="flex items-center capitalize gap-1">
+              Sydney, NSW, Australia
             </span>
-            <span className="flex items-center gap-1">
-              <img src={target} className="w-3" alt="" />
-              Goal-Directed
-            </span>
-            <span className="flex items-center gap-1">
-              <img src={thinking} className="w-3" alt="" />
-              Critical Thinking
-            </span>
-          </p>
-
-          {/* Languages */}
-          <div className="flex gap-10 px-2 pt-4">
             <div className="relative language-hover-description">
               <img
                 className="h-4 w-4 animated-bouncing"
@@ -118,12 +97,52 @@ const Introduction: React.FC = () => {
               />
               <p>Native Speaker</p>
             </div>
-          </div>
+            {/* <span className="flex items-center gap-1">
+              <img src={time} className="w-3" alt="" />
+              Time Management
+            </span>
+            <span className="flex items-center gap-1">
+              <img src={target} className="w-3" alt="" />
+              Goal-Directed
+            </span>
+            <span className="flex items-center gap-1">
+              <img src={thinking} className="w-3" alt="" />
+              Critical Thinking
+            </span> */}
+          </p>
+
+          {/* Languages */}
+          {/* <div className="flex gap-10 px-2 pt-4">
+            <div className="relative language-hover-description">
+              <img
+                className="h-4 w-4 animated-bouncing"
+                src={eng}
+                alt="I speak english"
+              />
+              <p>C1 IELTS Certificate</p>
+            </div>
+            <div className="relative language-hover-description">
+              <img
+                className="h-4 w-4 animated-bouncing-delayed"
+                src={esp}
+                alt="I speak spanish"
+              />
+              <p>Native Speaker</p>
+            </div>
+            <div className="relative language-hover-description">
+              <img
+                className="h-4 w-4 animated-bouncing-delayed-2 rounded-sm opacity-90"
+                src={cat}
+                alt="I speak catalan"
+              />
+              <p>Native Speaker</p>
+            </div>
+          </div> */}
           <div className="flex pt-3 md:pt-10 md:pt-0 items-center gap-8">
             <a
               href={resume}
               download
-              className="bounce-up-on-hover py-3 px-5 text-xs bg-blue-700 text-white rounded-full border border-blue-700 hover:opacity-90 hover:bg-white hover:text-blue-700 transition-all duration-500"
+              className="bounce-up-on-hover py-3 px-5 text-xs bg-blue-700 text-white rounded-full border border-blue-700 hover:opacity-90 hover:bg-white hover:text-blue-700 hover:shadow-2xl transition-all duration-500"
             >
               Resume
             </a>
@@ -156,7 +175,7 @@ const Introduction: React.FC = () => {
             </div>
 
             <a
-              className="bounce-up-on-hover text-sm capitalize font-bold flex justify-center items-center text-white py-2 px-4 border border-red-500 rounded-full bg-red-500 hover:text-red-500 hover:bg-white transition-all duration-500"
+              className="bounce-up-on-hover text-sm capitalize font-bold flex justify-center items-center text-white py-2 px-4 border border-red-500 rounded-full bg-red-500 hover:text-red-500 hover:shadow-2xl hover:bg-white transition-all duration-500"
               href={process.env.REACT_APP_MAIL_TO}
             >
               Gmail
@@ -187,6 +206,14 @@ const Introduction: React.FC = () => {
               href="https://twitter.com/manzcube"
             >
               <img src={twitter} alt="" className="w-4" />
+            </a>
+          </div>
+          <div className="w-full pt-10">
+            <a
+              className="py-2 px-4 w-fit mx-auto font-thin capitalize text-xs bg-gray-700 text-white border border-gray-700 hover:opacity-90 hover:bg-white hover:text-gray-700 transition-all duration-500"
+              href="#services"
+            >
+              Check out my Services
             </a>
           </div>
         </div>
