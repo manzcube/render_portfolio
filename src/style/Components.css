@@ -1,13 +1,7 @@
-.card-width {
-  max-width: 40ch;
-}
-
-/* Introduction */
-
 /* Languages descriptions */
 .language-hover-description p {
   position: absolute;
-  top: 4.5ch;
+  top: 8ch;
   z-index: 2;
   border-radius: 10px;
   display: none;
@@ -38,7 +32,6 @@
   font-weight: 400;
 }
 #skill-features span {
-  text-transform: lowercase;
   font-size: 10px;
   padding: 2px 6px;
   background: #e0e0e0;
@@ -47,17 +40,15 @@
 
 /* Experience */
 #experience-section-title {
-  text-transform: uppercase;
-  text-align: center;
+  text-transform: capitalize;
+  text-align: start;
   font-weight: 900;
   font-size: 1.8ch;
-  letter-spacing: 1ch;
-  padding: 20px 0;
+  margin: 5ch;
 }
 
-/* Experience > Projects */
 .Project {
-  box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.2);
   max-width: 50ch;
   margin: 3ch;
   border-radius: 5px;
@@ -79,6 +70,14 @@
 }
 
 /* Services */
+.box {
+  padding: 3ch;
+  border: 1px solid white;
+}
+
+.box:hover {
+  box-shadow: 6px 6px 6px rgba(255, 255, 255, 0.2);
+}
 
 .services-text {
   position: absolute;

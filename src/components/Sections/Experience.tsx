@@ -27,13 +27,13 @@ import cube from "../../resources/rubiks.png";
 
 const Experience: React.FC = () => {
   return (
-    <div id="experience" className="min-h-screen text-gray-800 bg-white">
-      <p id="experience-section-title">working experience</p>
+    <div id="experience" className="min-h-screen text-gray-900 bg-white">
+      <p id="experience-section-title">My Projects</p>
       <div className="flex pb-10 flex-wrap justify-around">
         <Project
           image={skualo}
           iconsList={[pic11, pic1, pic3, pic2, pic7]}
-          title="SKUALO"
+          title="Skualo Diving Center"
           subtitle="Diving Center's website with Fareharbor Booking system API. Mostly practicing components reusability."
           url="https://skualo-8badb.web.app"
         />

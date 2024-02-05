@@ -16,7 +16,7 @@ import target from "../../resources/target.png";
 import thinking from "../../resources/thinking.png";
 
 // Files
-const resume = require("../../resources/Software_Engineer_Resume.pdf");
+const resume = require("../../resources/Resume_nophone.pdf");
 
 // Style
 const socialLink =
@@ -48,52 +48,36 @@ const Introduction: React.FC = () => {
     >
       <div
         id="introduction"
-        className="h-screen w-full z-20 relative flex flex-col lg:flex-row justify-center items-center gap-10 text-blue-500 lg:pt-0 p-5 pt-16 sm:pt-5"
+        className="min-h-screen w-full z-20 relative flex flex-col lg:flex-row justify-center items-center gap-4 md:gap-10 text-blue-500 lg:pt-0 p-5 pt-16 sm:pt-5"
       >
         <FloatingIcons />
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col items-center gap-5">
           <img
             src={pic}
             alt="pic"
             className="w-32 lg:w-56 xl:w-72 h-auto object-cover shadow-2xl rounded-full"
           />
           <a
-            className="py-3 px-5 w-fit mx-auto text-xs bg-gray-700 text-white rounded-xl border border-gray-700 hover:opacity-90 hover:bg-white hover:text-gray-700 transition-all duration-500"
+            className="py-1.5 px-3 md:py-2 md:px-4 w-fit mx-auto text-xs bg-gray-900 text-white rounded-sm border border-gray-900 hover:opacity-90 hover:bg-white hover:text-gray-700 transition-all duration-500"
             href="#services"
           >
             Check out my Services
           </a>
         </div>
-        <div className="p-4 text-gray-700 space-y-2 md:space-y-5 uppercase font-extrabold">
-          <p className="text-md lg:text-mlg">Hi there! i'm</p>
-          <div className="text-3xl lg:text-6xl space-x-5 flex items-center">
+        <div className="p-4 text-gray-700 space-y-2 md:space-y-5 font-extrabold">
+          <p className="text-md lg:text-lg">Hi there! I'm</p>
+          <div className="text-3xl lg:text-6xl space-x-5 flex items-center uppercase">
             <p className="text-blue-700 animated-bouncing">Marc</p>
             <p className="text-gray-700 animated-bouncing-delayed">Alzamora</p>
           </div>
-          <p className="text-gray-500 text-xs lg:text-sm max-w-md font-semibold">
+          <p className="text-gray-500 text-xs lg:text-sm max-w-md font-normal">
             Experienced Full Stack Developer with a passion for creating
-            impactful solutions, based in Sydney.
-          </p>
-          <p className="text-gray-500 text-xs lg:text-sm max-w-md font-semibold">
-            Enthusiastic about Rubik's Cubes and spacecrafts.
+            impactful solutions.
           </p>
           <p id="skill-features">
             <span className="flex items-center gap-1">
-              <img src={time} className="w-3" alt="" />
-              Time Management
+              Sydney, NSW, Australia
             </span>
-            <span className="flex items-center gap-1">
-              <img src={target} className="w-3" alt="" />
-              Goal-Directed
-            </span>
-            <span className="flex items-center gap-1">
-              <img src={thinking} className="w-3" alt="" />
-              Critical Thinking
-            </span>
-          </p>
-
-          {/* Languages */}
-          <div className="flex gap-10 px-2 pt-4">
             <div className="relative language-hover-description">
               <img
                 className="h-4 w-4 animated-bouncing"
@@ -118,7 +102,8 @@ const Introduction: React.FC = () => {
               />
               <p>Native Speaker</p>
             </div>
-          </div>
+          </p>
+
           <div className="flex pt-3 md:pt-10 md:pt-0 items-center gap-8">
             <a
               href={resume}
@@ -156,7 +141,7 @@ const Introduction: React.FC = () => {
             </div>
 
             <a
-              className="bounce-up-on-hover text-sm capitalize font-bold flex justify-center items-center text-white py-2 px-4 border border-red-500 rounded-full bg-red-500 hover:text-red-500 hover:bg-white transition-all duration-500"
+              className="bounce-up-on-hover text-xs capitalize font-bold flex justify-center items-center text-white py-2 px-4 border border-red-500 rounded-full bg-red-500 hover:text-red-500 hover:bg-white transition-all duration-500"
               href={process.env.REACT_APP_MAIL_TO}
             >
               Gmail

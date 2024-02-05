@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      const offset = -50; // Adjust this value to your desired offset
+      const offset = sectionId === "experience" ? -70 : -30; // Adjust this value to your desired offset
       window.scrollTo({
         top: section.offsetTop + offset,
         behavior: "smooth",
@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div
-      className="w-full fixed flex sm:hidden justify-between items-center z-30 p-3 bg-sky-700"
+      className="w-full fixed flex sm:hidden justify-between items-center z-30 p-2 text-xs bg-gray-900"
       id="Navbar"
     >
       <Link
@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
       <div className="flex gap-4 w-fit">
         <button
           className={`${
-            activeSection === "introduction" ? "bg-sky-500 shadow-inner" : ""
+            activeSection === "introduction" ? "bg-gray-500 shadow-inner" : ""
           } p-2 rounded text-white transition-all duration-500`}
           onClick={() => scrollToSection("introduction")}
         >
@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
 
         <button
           className={`${
-            activeSection === "services" ? "bg-sky-500 shadow-inner" : ""
+            activeSection === "services" ? "bg-gray-500 shadow-inner" : ""
           } p-2 rounded text-white transition-all duration-500`}
           onClick={() => scrollToSection("services")}
         >
@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
         </button>
         <button
           className={`${
-            activeSection === "experience" ? "bg-sky-500 shadow-inner" : ""
+            activeSection === "experience" ? "bg-gray-500 shadow-inner" : ""
           } p-2 rounded text-white transition-all duration-500`}
           onClick={() => scrollToSection("experience")}
         >
