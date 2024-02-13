@@ -42,7 +42,12 @@ const Services: React.FC = () => {
         />
       </div>
       <div>
-        <a href="https://contact-us-8b1325.zapier.app">Contact Me</a>
+        <a
+          className="px-5 py-3 border border-white hover:bg-white hover:text-gray-900 transition-all duration-300"
+          href="https://contact-us-8b1325.zapier.app"
+        >
+          Contact Me
+        </a>
       </div>
     </div>
   );

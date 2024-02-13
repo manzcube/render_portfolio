@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div
-      className="w-full fixed flex sm:hidden justify-between items-center z-30 p-2 text-xs bg-gray-900"
+      className="w-full fixed flex justify-between items-center z-30 p-2 text-xs bg-gray-900"
       id="Navbar"
     >
       <Link

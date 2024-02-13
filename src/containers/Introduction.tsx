@@ -71,7 +71,7 @@ const Introduction: React.FC = () => {
             Experienced Full Stack Developer with a passion for creating
             impactful solutions.
           </p>
-          <p id="skill-features">
+          <div id="skill-features">
             <span className="flex items-center gap-1">
               Sydney, NSW, Australia
             </span>
@@ -99,7 +99,7 @@ const Introduction: React.FC = () => {
               />
               <p>Native Speaker</p>
             </div>
-          </p>
+          </div>
 
           <div className="flex pt-3 md:pt-10 md:pt-0 items-center gap-8">
             <a
