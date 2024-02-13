@@ -1,22 +1,19 @@
 import React, { useState, useEffect } from "react";
 
 // Components
-import FloatingIcons from "../FloatingIcons";
+import FloatingIcons from "../components/FloatingIcons";
 
 // Pictures
-import pic from "../../resources/profile_picture2.png";
-import linkedin from "../../resources/linkedin.png";
-import github from "../../resources/github.png";
-import twitter from "../../resources/twitter.png";
-import eng from "../../resources/united-kingdom.png";
-import esp from "../../resources/spain.png";
-import cat from "../../resources/ddd.jpg";
-import time from "../../resources/time-management.png";
-import target from "../../resources/target.png";
-import thinking from "../../resources/thinking.png";
+import pic from "../resources/profile_picture2.png";
+import linkedin from "../resources/linkedin.png";
+import github from "../resources/github.png";
+import twitter from "../resources/twitter.png";
+import eng from "../resources/united-kingdom.png";
+import esp from "../resources/spain.png";
+import cat from "../resources/ddd.jpg";
 
 // Files
-const resume = require("../../resources/Resume_nophone.pdf");
+const resume = require("../resources/Resume_nophone.pdf");
 
 // Style
 const socialLink =
@@ -141,10 +138,10 @@ const Introduction: React.FC = () => {
             </div>
 
             <a
-              className="bounce-up-on-hover text-xs capitalize font-bold flex justify-center items-center text-white py-2 px-4 border border-red-500 rounded-full bg-red-500 hover:text-red-500 hover:bg-white transition-all duration-500"
-              href={process.env.REACT_APP_MAIL_TO}
+              className="bounce-up-on-hover text-xs capitalize font-bold flex justify-center items-center text-white py-3 px-5 border border-red-500 rounded-full bg-red-500 hover:text-red-500 hover:bg-white transition-all duration-500"
+              href="https://contact-us-8b1325.zapier.app"
             >
-              Gmail
+              Contact Me
             </a>
           </div>
 

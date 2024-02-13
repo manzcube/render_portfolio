@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 
 // Style
-import "../../style/Components.css";
+import "../style/Components.css";
 
 // Components
-import ServiceBox from "../ServiceBox";
+import ServiceBox from "../components/ServiceBox";
+import { Link } from "react-router-dom";
 
 const Services: React.FC = () => {
   const [contactOpen, setContactOpen] = useState(false);
@@ -41,24 +42,7 @@ const Services: React.FC = () => {
         />
       </div>
       <div>
-        {" "}
-        {contactOpen ? (
-          <a
-            className="py-2 text-center mt-5 w-full px-4 border transition-all duration-300 active:scale-95 border-white hover:bg-white hover:text-gray-800"
-            target="_blank"
-            rel="noreferrer"
-            href={process.env.REACT_APP_MAIL_TO}
-          >
-            Send me an email
-          </a>
-        ) : (
-          <button
-            onClick={() => setContactOpen(!contactOpen)}
-            className="py-2 mt-5 px-4 w-fit border transition-all duration-300 active:scale-95 border-white text-white hover:bg-white hover:text-gray-800"
-          >
-            Let's talk!
-          </button>
-        )}
+        <a href="https://contact-us-8b1325.zapier.app">Contact Me</a>
       </div>
     </div>
   );

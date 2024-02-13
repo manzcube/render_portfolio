@@ -3,7 +3,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 // Containers
-import Dashboard from "./containers/Dashboard.tsx";
+import Dashboard from "./views/Dashboard.tsx";
 import Footer from "./components/Layout/Footer.tsx";
 import Navbar from "./components/Layout/Navbar.tsx";
 

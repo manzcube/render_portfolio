@@ -1,29 +1,29 @@
 import React from "react";
 
 // Style
-import "../../style/Components.css";
+import "../style/Components.css";
 
-import pic1 from "../../resources/techIcons/react.png";
-import pic2 from "../../resources/techIcons/fire.png";
-import pic3 from "../../resources/techIcons/git.png";
-import pic4 from "../../resources/techIcons/mongo.png";
-import pic5 from "../../resources/techIcons/node.png";
-import pic6 from "../../resources/techIcons/sass.png";
-import pic7 from "../../resources/techIcons/tail.png";
-import pic8 from "../../resources/techIcons/ts.png";
-import pic9 from "../../resources/techIcons/go.png";
-import pic10 from "../../resources/techIcons/redux.png";
-import pic11 from "../../resources/techIcons/js.png";
-import pic12 from "../../resources/techIcons/threejs.png";
+import pic1 from "../resources/techIcons/react.png";
+import pic2 from "../resources/techIcons/fire.png";
+import pic3 from "../resources/techIcons/git.png";
+import pic4 from "../resources/techIcons/mongo.png";
+import pic5 from "../resources/techIcons/node.png";
+import pic6 from "../resources/techIcons/sass.png";
+import pic7 from "../resources/techIcons/tail.png";
+import pic8 from "../resources/techIcons/ts.png";
+import pic9 from "../resources/techIcons/go.png";
+import pic10 from "../resources/techIcons/redux.png";
+import pic11 from "../resources/techIcons/js.png";
+import pic12 from "../resources/techIcons/threejs.png";
 
 // Components
-import Project from "../Project";
+import Project from "../components/Project";
 
 // Media
-import skualo from "../../resources/skualo.png";
-import mm from "../../resources/mm.png";
-import mido from "../../resources/mido.png";
-import cube from "../../resources/rubiks.png";
+import skualo from "../resources/skualo.png";
+import mm from "../resources/mm.png";
+import mido from "../resources/mido.png";
+import cube from "../resources/rubiks.png";
 
 const Experience: React.FC = () => {
   return (
