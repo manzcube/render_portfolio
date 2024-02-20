@@ -32,7 +32,7 @@ const Project: React.FC<ProjectProps> = ({
       <div className="relative">
         <img
           src={image}
-          className={`object-cover border rounded-top cursor-pointer${
+          className={`object-cover border rounded-top cursor-pointer project-image ${
             onHover ? "brightness-50" : ""
           }`}
           alt=""
@@ -45,16 +45,20 @@ const Project: React.FC<ProjectProps> = ({
           Click here to visit website
         </span>
       </div>
-      <div className="p-5 pb-0">
-        <div className="text-sm sm:text-md md:text-lg font-bold">{title}</div>
-        <div className="mb-5 text-xs text-gray-500 sm:text-xs md:text-sm">
-          {subtitle}
+      <div className="p-8">
+        <div className="pb-0">
+          <div className="text-sm sm:text-md md:text-lg font-bold mb-3">
+            {title}
+          </div>
+          <div className="mb-5 text-xs text-gray-500 sm:text-xs md:text-sm">
+            {subtitle}
+          </div>
         </div>
-      </div>
-      <div className="flex w-full p-8 pt-0 gap-5">
-        {iconsList?.map((icon, i) => (
-          <img className="h-5" key={i} src={icon} alt="icon-image" />
-        ))}
+        <div className="flex w-full pt-0 gap-5">
+          {iconsList?.map((icon, i) => (
+            <img className="h-5" key={i} src={icon} alt="icon-image" />
+          ))}
+        </div>
       </div>
     </a>
   );
