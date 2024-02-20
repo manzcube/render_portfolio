@@ -4,16 +4,16 @@ import React, { useState, useEffect } from "react";
 import FloatingIcons from "../components/FloatingIcons";
 
 // Pictures
-import pic from "../resources/profile_picture2.png";
-import linkedin from "../resources/linkedin.png";
-import github from "../resources/github.png";
-import twitter from "../resources/twitter.png";
-import eng from "../resources/united-kingdom.png";
-import esp from "../resources/spain.png";
-import cat from "../resources/ddd.jpg";
+import pic from "../images/profile_picture2.png";
+import linkedin from "../images/linkedin.png";
+import github from "../images/github.png";
+import twitter from "../images/twitter.png";
+import eng from "../images/united-kingdom.png";
+import esp from "../images/spain.png";
+import cat from "../images/ddd.jpg";
 
 // Files
-const resume = require("../resources/Resume_nophone.pdf");
+const resume = require("../images/Resume_nophone.pdf");
 
 // Style
 const socialLink =

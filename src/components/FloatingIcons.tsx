@@ -1,17 +1,17 @@
 import React from "react";
 import "../style/FloatingIcons.css";
 
-import pic1 from "../resources/techIcons/react.png";
-import pic2 from "../resources/techIcons/fire.png";
-import pic3 from "../resources/techIcons/git.png";
-import pic4 from "../resources/techIcons/mongo.png";
-import pic5 from "../resources/techIcons/node.png";
-import pic6 from "../resources/techIcons/sass.png";
-import pic7 from "../resources/techIcons/tail.png";
-import pic8 from "../resources/techIcons/ts.png";
-import pic9 from "../resources/techIcons/go.png";
-import pic10 from "../resources/techIcons/redux.png";
-import pic11 from "../resources/techIcons/threejs.png";
+import pic1 from "../images/techIcons/react.png";
+import pic2 from "../images/techIcons/fire.png";
+import pic3 from "../images/techIcons/git.png";
+import pic4 from "../images/techIcons/mongo.png";
+import pic5 from "../images/techIcons/node.png";
+import pic6 from "../images/techIcons/sass.png";
+import pic7 from "../images/techIcons/tail.png";
+import pic8 from "../images/techIcons/ts.png";
+import pic9 from "../images/techIcons/go.png";
+import pic10 from "../images/techIcons/redux.png";
+import pic11 from "../images/techIcons/threejs.png";
 
 const FloatingIcons: React.FC = () => {
   return (
