@@ -12,7 +12,7 @@ const Services: React.FC = () => {
   return (
     <div
       id="services"
-      className="bg-black flex flex-col justify-between min-h-screen w-full p-10"
+      className="bg-gray-700 flex flex-col justify-between min-h-screen w-full p-10"
     >
       <div>
         <h1 className="text-center font-extrabold text-md md:text-2xl mt-10">
@@ -44,7 +44,7 @@ const Services: React.FC = () => {
       <div>
         <a
           className="px-5 py-3 border border-white hover:bg-white hover:text-gray-900 transition-all duration-300"
-          href="https://contact-us-8b1325.zapier.app"
+          href="https://contact-manzcube.zapier.app"
         >
           Contact Me
         </a>
