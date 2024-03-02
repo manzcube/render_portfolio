@@ -26,9 +26,6 @@ import mido from "../images/projects/mido.png";
 import cube from "../images/projects/rubiks.png";
 import cafe from "../images/projects/cafe.png";
 
-import mario_scene from "../images/services/movie.jpg";
-import mario from "../images/services/mario_png.png";
-
 const Experience: React.FC = () => {
   const goToTheWebite: (url: string) => void = (newUrl: string) => {
     window.location.assign(newUrl);
@@ -36,39 +33,8 @@ const Experience: React.FC = () => {
 
   return (
     <div id="experience" className="min-h-screen text-gray-900 bg-white">
-      <p id="experience-section-title">My Projects</p>
-      <div className="pictures_galery">
-        <img
-          onClick={() => goToTheWebite("https://skualo-8badb.web.app")}
-          src={skualo}
-          alt=""
-        />
-        <img
-          onClick={() => goToTheWebite("https://mixing-media.web.app")}
-          src={mm}
-          alt=""
-        />
-        <img
-          onClick={() => goToTheWebite("https://mido.onrender.com")}
-          src={mido}
-          alt=""
-        />
-        <img
-          onClick={() =>
-            goToTheWebite("https://rubiks-cube-client.onrender.com")
-          }
-          src={cube}
-          alt=""
-        />
-        <img
-          onClick={() =>
-            goToTheWebite("https://cafe-website-m90j.onrender.com/")
-          }
-          src={cafe}
-          alt=""
-        />
-      </div>
-      {/* <div className="flex pb-10 flex-wrap justify-around">
+      <p id="experience-section-title">Projects</p>
+      <div className="flex pb-10 flex-wrap justify-around">
         <Project
           image={skualo}
           iconsList={[pic11, pic1, pic3, pic2, pic7]}
@@ -104,7 +70,7 @@ const Experience: React.FC = () => {
           subtitle="Generic website for Cafes with languages and end-to-end made components."
           url="https://cafe-website-m90j.onrender.com/"
         />
-      </div> */}
+      </div>
     </div>
   );
 };

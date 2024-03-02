@@ -5,14 +5,12 @@ import "../style/Components.css";
 
 // Components
 import ServiceBox from "../components/ServiceBox";
-import { Link } from "react-router-dom";
 
 const Services: React.FC = () => {
-  const [contactOpen, setContactOpen] = useState(false);
   return (
     <div
       id="services"
-      className="bg-gray-700 flex flex-col justify-between min-h-screen w-full p-10"
+      className="bg-gray-900 flex flex-col justify-between min-h-screen w-full p-10"
     >
       <div>
         <h1 className="text-center font-extrabold text-md md:text-2xl mt-10">

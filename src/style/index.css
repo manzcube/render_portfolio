@@ -8,6 +8,7 @@ html,
 body {
   scroll-behavior: smooth;
   position: relative;
+  user-select: none;
 }
 html::-webkit-scrollbar {
   width: 0;

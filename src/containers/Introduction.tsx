@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import FloatingIcons from "../components/FloatingIcons";
 
 // Pictures
-import pic from "../images/profile_picture2.png";
+import pic from "../images/prof.png";
 import linkedin from "../images/linkedin.png";
 import github from "../images/github.png";
 import twitter from "../images/twitter.png";
