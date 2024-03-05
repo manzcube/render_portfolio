@@ -139,7 +139,7 @@ const Introduction: React.FC = () => {
 
             <a
               className="bounce-up-on-hover text-xs capitalize font-bold flex justify-center items-center text-white py-3 px-5 border border-red-500 rounded-full bg-red-500 hover:text-red-500 hover:bg-white transition-all duration-500"
-              href="https://contact-us-8b1325.zapier.app"
+              href="https://contact-manzcube.zapier.app"
             >
               Contact Me
             </a>

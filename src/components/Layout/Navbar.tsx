@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
         <button
           className={`${
             activeSection === "introduction" ? "bg-gray-500 shadow-inner" : ""
-          } p-2 rounded text-white transition-all duration-500`}
+          } p-2 rounded-full text-white transition-all duration-500`}
           onClick={() => scrollToSection("introduction")}
         >
           Dashboard
@@ -77,7 +77,7 @@ const Navbar: React.FC = () => {
         <button
           className={`${
             activeSection === "services" ? "bg-gray-500 shadow-inner" : ""
-          } p-2 rounded text-white transition-all duration-500`}
+          } p-2 rounded-full text-white transition-all duration-500`}
           onClick={() => scrollToSection("services")}
         >
           Services
@@ -85,7 +85,7 @@ const Navbar: React.FC = () => {
         <button
           className={`${
             activeSection === "experience" ? "bg-gray-500 shadow-inner" : ""
-          } p-2 rounded text-white transition-all duration-500`}
+          } p-2 rounded-full text-white transition-all duration-500`}
           onClick={() => scrollToSection("experience")}
         >
           Experience
