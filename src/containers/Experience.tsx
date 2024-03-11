@@ -40,7 +40,7 @@ const Experience: React.FC = () => {
           iconsList={[pic11, pic1, pic3, pic2, pic7]}
           title="Skualo Diving Center"
           subtitle="Diving Center's website with Fareharbor Booking system API. Mostly practicing components reusability."
-          url="https://skualo-8badb.web.app"
+          url="https://skualo-portocristo.com"
         />
         <Project
           image={mm}
