@@ -4,9 +4,9 @@ import React from "react";
 import "../style/index.css";
 
 // Components
-import Introduction from "../containers/Introduction.tsx";
-import Experience from "../containers/Experience.tsx";
-import Services from "../containers/Services.tsx";
+import Introduction from "../containers/Introduction";
+import Experience from "../containers/Experience";
+import Services from "../containers/Services";
 
 const Dashboard: React.FC = () => {
   return (

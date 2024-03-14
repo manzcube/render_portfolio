@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Button from "./Button";
 
 const Navbar: React.FC = () => {
   const [activeSection, setActiveSection] = useState("introduction");
+  console.log("rendering navabr");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,9 +47,8 @@ const Navbar: React.FC = () => {
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      const offset = sectionId === "experience" ? -70 : -30; // Adjust this value to your desired offset
       window.scrollTo({
-        top: section.offsetTop + offset,
+        top: section.offsetTop - 30,
         behavior: "smooth",
       });
     }
@@ -55,41 +56,31 @@ const Navbar: React.FC = () => {
 
   return (
     <div
-      className="w-full fixed flex justify-between items-center z-30 p-2 text-xs bg-gray-900"
+      className="w-full fixed flex justify-center sm:justify-between items-center z-30 p-2 text-xs text-gray-900 bg-white"
       id="Navbar"
     >
       <Link
         to="/"
-        className="font-bold text-xs lg:text-lg lg:tracking-widest text-white ml-6"
+        className="font-extrabold text-xs hidden sm:flex lg:text-lg lg:tracking-widest ml-6"
       >
         MANZCUBE
       </Link>
       <div className="flex gap-4 w-fit">
-        <button
-          className={`${
-            activeSection === "introduction" ? "bg-gray-500 shadow-inner" : ""
-          } p-2 rounded-full text-white transition-all duration-500`}
-          onClick={() => scrollToSection("introduction")}
-        >
-          Dashboard
-        </button>
-
-        <button
-          className={`${
-            activeSection === "services" ? "bg-gray-500 shadow-inner" : ""
-          } p-2 rounded-full text-white transition-all duration-500`}
-          onClick={() => scrollToSection("services")}
-        >
-          Services
-        </button>
-        <button
-          className={`${
-            activeSection === "experience" ? "bg-gray-500 shadow-inner" : ""
-          } p-2 rounded-full text-white transition-all duration-500`}
-          onClick={() => scrollToSection("experience")}
-        >
-          Experience
-        </button>
+        <Button
+          activeSection={activeSection}
+          selectionId="introduction"
+          scrollFunc={scrollToSection}
+        />
+        <Button
+          activeSection={activeSection}
+          selectionId="services"
+          scrollFunc={scrollToSection}
+        />
+        <Button
+          activeSection={activeSection}
+          selectionId="experience"
+          scrollFunc={scrollToSection}
+        />
       </div>
     </div>
   );

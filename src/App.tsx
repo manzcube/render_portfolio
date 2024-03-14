@@ -3,9 +3,9 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 // Containers
-import Dashboard from "./views/Dashboard.tsx";
-import Footer from "./components/Footer.tsx";
-import Navbar from "./components/Navbar.tsx";
+import Dashboard from "./views/Dashboard";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 const App: React.FC = () => {
   return (

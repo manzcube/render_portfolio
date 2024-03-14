@@ -52,7 +52,7 @@ const Introduction: React.FC = () => {
           <img
             src={pic}
             alt="pic"
-            className="w-32 lg:w-56 xl:w-72 h-auto object-cover shadow-2xl rounded-full"
+            className="w-28 lg:w-32 xl:w-44 border border-gray-500 h-auto object-cover shadow-2xl rounded-full"
           />
           <a
             className="py-1.5 px-3 md:py-2 md:px-4 w-fit mx-auto text-xs bg-gray-900 text-white rounded-sm border border-gray-900 hover:opacity-90 hover:bg-white hover:text-gray-700 transition-all duration-500"
@@ -63,7 +63,7 @@ const Introduction: React.FC = () => {
         </div>
         <div className="p-4 text-gray-700 space-y-2 md:space-y-5 font-extrabold">
           <p className="text-md lg:text-lg">Hi there! I'm</p>
-          <div className="text-3xl lg:text-6xl space-x-5 flex items-center uppercase">
+          <div className="text-2xl lg:text-4xl space-x-5 flex items-center uppercase">
             <p className="text-blue-700 animated-bouncing">Marc</p>
             <p className="text-gray-700 animated-bouncing-delayed">Alzamora</p>
           </div>
@@ -73,6 +73,25 @@ const Introduction: React.FC = () => {
           </p>
           <div id="skill-features">
             <span className="flex items-center gap-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-3 h-3"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                />
+              </svg>
               Sydney, NSW, Australia
             </span>
             <div className="relative language-hover-description">

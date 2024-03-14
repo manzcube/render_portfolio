@@ -33,7 +33,7 @@ const Experience: React.FC = () => {
 
   return (
     <div id="experience" className="min-h-screen text-gray-900 bg-white">
-      <p id="experience-section-title">Projects</p>
+      {/* <p id="experience-section-title">Projects</p> */}
       <div className="flex pb-10 flex-wrap justify-around">
         <Project
           image={skualo}
