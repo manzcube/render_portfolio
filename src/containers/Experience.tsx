@@ -3,28 +3,28 @@ import React from "react";
 // Style
 import "../style/Components.css";
 
-import pic1 from "../images/techIcons/react.png";
-import pic2 from "../images/techIcons/fire.png";
-import pic3 from "../images/techIcons/git.png";
-import pic4 from "../images/techIcons/mongo.png";
-import pic5 from "../images/techIcons/node.png";
-import pic6 from "../images/techIcons/sass.png";
-import pic7 from "../images/techIcons/tail.png";
-import pic8 from "../images/techIcons/ts.png";
-import pic9 from "../images/techIcons/go.png";
-import pic10 from "../images/techIcons/redux.png";
-import pic11 from "../images/techIcons/js.png";
-import pic12 from "../images/techIcons/threejs.png";
+import pic1 from "../images/techIcons/react.webp";
+import pic2 from "../images/techIcons/fire.webp";
+import pic3 from "../images/techIcons/git.webp";
+import pic4 from "../images/techIcons/mongo.webp";
+import pic5 from "../images/techIcons/node.webp";
+import pic6 from "../images/techIcons/sass.webp";
+import pic7 from "../images/techIcons/tail.webp";
+import pic8 from "../images/techIcons/ts.webp";
+import pic9 from "../images/techIcons/go.webp";
+import pic10 from "../images/techIcons/redux.webp";
+import pic11 from "../images/techIcons/js.webp";
+import pic12 from "../images/techIcons/threejs.webp";
 
 // Components
 import Project from "../components/Project";
 
 // Media
-import skualo from "../images/projects/skualo.png";
-import mm from "../images/projects/mm.png";
-import mido from "../images/projects/mido.png";
-import cube from "../images/projects/rubiks.png";
-import cafe from "../images/projects/cafe.png";
+import skualo from "../images/projects/skualo.webp";
+import mm from "../images/projects/mm.webp";
+import mido from "../images/projects/mido.webp";
+import cube from "../images/projects/rubiks.webp";
+import cafe from "../images/projects/cafe.webp";
 
 const Experience: React.FC = () => {
   const goToTheWebite: (url: string) => void = (newUrl: string) => {

@@ -4,13 +4,13 @@ import React, { useState, useEffect } from "react";
 import FloatingIcons from "../components/FloatingIcons";
 
 // Pictures
-import pic from "../images/prof.png";
-import linkedin from "../images/linkedin.png";
-import github from "../images/github.png";
-import twitter from "../images/twitter.png";
-import eng from "../images/united-kingdom.png";
-import esp from "../images/spain.png";
-import cat from "../images/ddd.jpg";
+import pic from "../images/profile.webp";
+import linkedin from "../images/linkedin.webp";
+import github from "../images/github.webp";
+import twitter from "../images/twitter.webp";
+import eng from "../images/united-kingdom.webp";
+import esp from "../images/spain.webp";
+import cat from "../images/ddd.webp";
 
 // Files
 const resume = require("../images/Resume_nophone.pdf");
