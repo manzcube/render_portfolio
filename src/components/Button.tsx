@@ -14,8 +14,8 @@ const Button: React.FC<IButton> = ({
   return (
     <button
       className={`${
-        activeSection === selectionId ? "bg-gray-50" : ""
-      } p-2 font-extrabold text-gray-700 rounded-full  transition-all duration-500`}
+        activeSection === selectionId ? "bg-gray-700 text-white" : ""
+      } py-1 px-3 font-bold text-gray-700 rounded transition-all duration-500`}
       onClick={() => scrollFunc(selectionId)}
     >
       {selectionId.toUpperCase()}

@@ -52,10 +52,10 @@ const Introduction: React.FC = () => {
           <img
             src={pic}
             alt="pic"
-            className="w-28 lg:w-32 xl:w-44 border border-gray-500 h-auto object-cover shadow-2xl rounded-full"
+            className="w-28 lg:w-32 xl:w-56 h-auto object-cover shadow-2xl rounded-full"
           />
           <a
-            className="py-1.5 px-3 md:py-2 md:px-4 w-fit mx-auto text-xs bg-gray-900 text-white rounded-sm border border-gray-900 hover:opacity-90 hover:bg-white hover:text-gray-700 transition-all duration-500"
+            className="py-1.5 px-3 md:py-2 md:px-4 w-fit mx-auto text-xs bg-gray-900 text-white rounded border border-gray-900 hover:opacity-90 hover:bg-white hover:text-gray-700 transition-all duration-500"
             href="#services"
           >
             Check out my Services
@@ -63,7 +63,7 @@ const Introduction: React.FC = () => {
         </div>
         <div className="p-4 text-gray-700 space-y-2 md:space-y-5 font-extrabold">
           <p className="text-md lg:text-lg">Hi there! I'm</p>
-          <div className="text-2xl lg:text-4xl space-x-5 flex items-center uppercase">
+          <div className="text-2xl md:text-4xl lg:text-6xl space-x-5 flex items-center uppercase">
             <p className="text-blue-700 animated-bouncing">Marc</p>
             <p className="text-gray-700 animated-bouncing-delayed">Alzamora</p>
           </div>

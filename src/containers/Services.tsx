@@ -10,7 +10,7 @@ const Services: React.FC = () => {
   return (
     <div
       id="services"
-      className="bg-gray-900 flex flex-col justify-between min-h-screen w-full p-16"
+      className="bg-gray-900 flex flex-col justify-between min-h-screen w-full p-10 sm:p-16"
     >
       <div>
         <h1 className="text-center font-extrabold text-md md:text-2xl mt-10">
@@ -21,7 +21,7 @@ const Services: React.FC = () => {
           applications. I bring your unique ideas to life.
         </p>
       </div>
-      <div className="flex flex-col lg:flex-row gap-5 p-5 lg:p-10">
+      <div className="flex flex-col lg:flex-row gap-5 sm:p-5 lg:p-10">
         <ServiceBox
           title="Design"
           text="First, let's have a conversation to discuss your needs and explore different solutions that work for you."
@@ -103,9 +103,9 @@ const Services: React.FC = () => {
           }
         />
       </div>
-      <div>
+      <div className="mt-10">
         <a
-          className="px-6 py-4 border rounded-full border-white text-sm hover:bg-white hover:text-gray-900 transition-all duration-300"
+          className="px-6 py-4 border border-white text-sm hover:bg-white hover:text-gray-900 transition-all duration-300"
           href="https://contact-manzcube.zapier.app"
         >
           I am interested
