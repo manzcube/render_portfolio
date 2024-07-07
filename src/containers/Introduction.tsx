@@ -55,21 +55,21 @@ const Introduction: React.FC = () => {
             className="w-28 lg:w-32 xl:w-56 h-auto object-cover shadow-2xl rounded-full"
           />
           <a
-            className="py-1.5 px-3 md:py-2 md:px-4 w-fit mx-auto text-xs bg-gray-900 text-white rounded border border-gray-900 hover:opacity-90 hover:bg-white hover:text-gray-700 transition-all duration-500"
+            className="py-1.5 px-3 md:py-2 md:px-4 w-fit mx-auto text-xs bg-gray-700 text-white rounded border border-gray-900 hover:opacity-90 hover:bg-white hover:text-gray-700 transition-all duration-500"
             href="#services"
           >
             Check out my Services
           </a>
         </div>
         <div className="p-4 text-gray-700 space-y-2 md:space-y-5 font-extrabold">
-          <p className="text-md lg:text-lg">Hi there! I'm</p>
+          <p className="text-md lg:text-lg font-extrabold">Hi there! I'm</p>
           <div className="text-2xl md:text-4xl lg:text-6xl space-x-5 flex items-center uppercase">
             <p className="text-blue-700 animated-bouncing">Marc</p>
-            <p className="text-gray-700 animated-bouncing-delayed">Alzamora</p>
+            <p className="text-gray-900 animated-bouncing-delayed">Alzamora</p>
           </div>
-          <p className="text-gray-500 text-xs lg:text-sm max-w-md font-normal">
-            Experienced Full Stack Developer with a passion for creating
-            impactful solutions.
+          <p className="text-gray-900 text-xs lg:text-sm max-w-md font-thin">
+            Full Stack Developer with a passion for creating innovative and
+            unique solutions.
           </p>
           <div id="skill-features">
             <span className="flex items-center gap-1">
@@ -92,7 +92,7 @@ const Introduction: React.FC = () => {
                   d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
                 />
               </svg>
-              Sydney, NSW, Australia
+              Mallorca, Spain
             </span>
             <div className="relative language-hover-description">
               <img

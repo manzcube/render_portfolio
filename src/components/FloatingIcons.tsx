@@ -12,6 +12,7 @@ import pic8 from "../images/techIcons/ts.webp";
 import pic9 from "../images/techIcons/go.webp";
 import pic10 from "../images/techIcons/redux.webp";
 import pic11 from "../images/techIcons/threejs.webp";
+import pic12 from "../images/techIcons/expo.webp";
 
 const FloatingIcons: React.FC = () => {
   return (
@@ -27,6 +28,7 @@ const FloatingIcons: React.FC = () => {
       <img src={pic9} alt="pic9" className="icon icon-9" />
       <img src={pic10} alt="pic10" className="icon icon-10" />
       <img src={pic11} alt="pic11" className="icon icon-11" />
+      <img src={pic12} alt="pic12" className="icon icon-12" />
     </div>
   );
 };

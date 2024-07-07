@@ -10,7 +10,7 @@ const Services: React.FC = () => {
   return (
     <div
       id="services"
-      className="bg-gray-900 flex flex-col justify-between min-h-screen w-full p-10 sm:p-16"
+      className="bg-gray-950 flex flex-col justify-between min-h-screen w-full p-10 sm:p-16"
     >
       <div>
         <h1 className="text-center font-extrabold text-md md:text-2xl mt-10">

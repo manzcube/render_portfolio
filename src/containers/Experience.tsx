@@ -27,10 +27,6 @@ import cube from "../images/projects/rubiks.webp";
 import cafe from "../images/projects/cafe.webp";
 
 const Experience: React.FC = () => {
-  const goToTheWebite: (url: string) => void = (newUrl: string) => {
-    window.location.assign(newUrl);
-  };
-
   return (
     <div id="experience" className="min-h-screen text-gray-900 bg-white">
       {/* <p id="experience-section-title">Projects</p> */}
