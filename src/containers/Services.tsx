@@ -17,8 +17,8 @@ const Services: React.FC = () => {
           WHAT I DO?
         </h1>
         <p className="w-full text-center text-xs text-gray-50 my-5 font-thin tracking-wide">
-          I create web applications. Boost your business with custom
-          applications. I bring your unique ideas to life.
+          Boost your business with custom applications. I bring your unique
+          ideas to life.
         </p>
       </div>
       <div className="flex flex-col lg:flex-row gap-5 sm:p-5 lg:p-10">
@@ -44,7 +44,7 @@ const Services: React.FC = () => {
         />
         <ServiceBox
           title="Build"
-          text="I build and code from scratch, ensuring that your project it's unique and not based on pre-made templates."
+          text="I build and code from scratch, ensuring that your project it's unique and tailored to your needs."
           icon={
             <svg
               xmlns="http://www.w3.org/2000/svg"

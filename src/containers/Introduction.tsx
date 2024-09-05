@@ -17,49 +17,30 @@ const resume = require("../images/Resume_nophone.pdf");
 
 // Style
 const socialLink =
-  "p-2 rounded-md shadow-sm hover:shadow-2xl bg-white border border-white hover:scale-110 hover:border-blue-700 transition-all duration-500";
+  "p-2 rounded-md bg-white border shadow-md hover:shadow-xl transition-all duration-400";
 
 const Introduction: React.FC = () => {
-  const [scrollY, setScrollY] = useState<number>(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const opacity = 1 - scrollY / 2 / window.innerHeight;
-  const scale = 1 - scrollY / 8 / window.innerHeight;
   return (
-    <div
-      style={{
-        opacity: opacity < 0 ? 0 : opacity,
-        transform: `scale(${scale < 0.5 ? 0.5 : scale})`,
-      }}
-    >
+    <div>
       <div
         id="introduction"
         className="min-h-screen w-full z-20 relative flex flex-col lg:flex-row justify-center items-center gap-4 md:gap-10 text-blue-500 lg:pt-0 p-5 pt-16 sm:pt-5"
       >
         <FloatingIcons />
         <div className="flex flex-col items-center gap-5">
-          <img
-            src={pic}
-            alt="pic"
-            className="w-28 lg:w-32 xl:w-56 h-auto object-cover shadow-2xl rounded-full"
-          />
-          <a
-            className="py-1.5 px-3 md:py-2 md:px-4 w-fit mx-auto text-xs bg-gray-700 text-white rounded border border-gray-900 hover:opacity-90 hover:bg-white hover:text-gray-700 transition-all duration-500"
-            href="#services"
-          >
-            Check out my Services
-          </a>
+          <div className="text-center relative group rounded-full">
+            <img
+              src={pic}
+              alt="pic"
+              className="w-28 lg:w-32 xl:w-56 h-auto object-cover shadow-2xl rounded-full"
+            />
+            <a
+              className="w-full rounded-full h-full text-xs text-white absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:bg-black/50 transition-all duration-100"
+              href="#services"
+            >
+              Check out my Services
+            </a>
+          </div>
         </div>
         <div className="p-4 text-gray-700 space-y-2 md:space-y-5 font-extrabold">
           <p className="text-md lg:text-lg font-extrabold">Hi there! I'm</p>
@@ -67,7 +48,7 @@ const Introduction: React.FC = () => {
             <p className="text-blue-700 animated-bouncing">Marc</p>
             <p className="text-gray-900 animated-bouncing-delayed">Alzamora</p>
           </div>
-          <p className="text-gray-900 text-xs lg:text-sm max-w-md font-thin">
+          <p className="text-gray-900 text-xs lg:text-sm max-w-md font-normal">
             Full Stack Developer with a passion for creating innovative and
             unique solutions.
           </p>
