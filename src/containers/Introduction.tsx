@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
 
 // Components
-import FloatingIcons from "../components/FloatingIcons";
+import FloatingIcons from "../components/FloatingIcons/FloatingIcons";
 
 // Pictures
-import pic from "../images/profile.webp";
-import linkedin from "../images/linkedin.webp";
-import github from "../images/github.webp";
-import twitter from "../images/twitter.webp";
-import eng from "../images/united-kingdom.webp";
-import esp from "../images/spain.webp";
-import cat from "../images/ddd.webp";
+const pic = "/images/profile.webp";
+const linkedin = "/images/linkedin.webp";
+const github = "/images/github.webp";
+const twitter = "/images/twitter.webp";
+const eng = "/images/united-kingdom.webp";
+const esp = "/images/spain.webp";
+const cat = "/images/ddd.webp";
 
 // Files
-const resume = require("../images/Resume_nophone.pdf");
+const resume = require("../pdfs/Resume_nophone.pdf");
 
 // Style
 const socialLink =

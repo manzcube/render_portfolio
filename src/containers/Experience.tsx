@@ -1,30 +1,32 @@
 import React from "react";
 
 // Style
-import "../style/Components.css";
+import "../style/Containers.css";
 
-import pic1 from "../images/techIcons/react.webp";
-import pic2 from "../images/techIcons/fire.webp";
-import pic3 from "../images/techIcons/git.webp";
-import pic4 from "../images/techIcons/mongo.webp";
-import pic5 from "../images/techIcons/node.webp";
-import pic6 from "../images/techIcons/sass.webp";
-import pic7 from "../images/techIcons/tail.webp";
-import pic8 from "../images/techIcons/ts.webp";
-import pic9 from "../images/techIcons/go.webp";
-import pic10 from "../images/techIcons/redux.webp";
-import pic11 from "../images/techIcons/js.webp";
-import pic12 from "../images/techIcons/threejs.webp";
+const pic1 = "/images/react.webp";
+const pic2 = "/images/fire.webp";
+const pic3 = "/images/git.webp";
+const pic4 = "/images/mongo.webp";
+const pic5 = "/images/node.webp";
+const pic6 = "/images/sass.webp";
+const pic7 = "/images/tail.webp";
+const pic8 = "/images/ts.webp";
+const pic9 = "/images/go.webp";
+const pic10 = "/images/redux.webp";
+const pic11 = "/images/js.webp";
+const pic12 = "/images/threejs.webp";
+const pic13 = "/images/expo.webp";
 
 // Components
 import Project from "../components/Project";
 
 // Media
-import skualo from "../images/projects/skualo.webp";
-import mm from "../images/projects/mm.webp";
-import mido from "../images/projects/mido.webp";
-import cube from "../images/projects/rubiks.webp";
-import cafe from "../images/projects/cafe.webp";
+const skualo = "/images/skualo.webp";
+const mm = "/images/mm.webp";
+const mido = "/images/mido.webp";
+const cube = "/images/rubiks.webp";
+const cafe = "/images/cafe.webp";
+const d0a1 = "/images/d0a1.webp";
 
 const Experience: React.FC = () => {
   return (
@@ -36,8 +38,14 @@ const Experience: React.FC = () => {
           iconsList={[pic11, pic1, pic3, pic2, pic7]}
           title="Skualo Diving Center"
           subtitle="Diving Center's website with Fareharbor Booking system API. Mostly practicing components reusability."
-          // url="https://skualo-portocristo.com"
-          url="https://skualo.onrender.com/"
+          url="https://skualo-portocristo.com"
+        />
+        <Project
+          image={d0a1}
+          iconsList={[pic13, pic1, pic3, pic8]}
+          title="D0A1 Accounting"
+          subtitle="D0A1 is an offline app for tracking income and expenses. Manage assets, categorize transactions, and view summaries, all stored privately on your device. Simple, customizable, and secure."
+          url="/d0a1"
         />
         <Project
           image={mm}

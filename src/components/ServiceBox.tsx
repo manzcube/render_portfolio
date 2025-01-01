@@ -1,12 +1,9 @@
 import React from "react";
 
-interface ServiceBox {
-  title: string;
-  text: string;
-  icon: React.ReactNode;
-}
+// Types
+import { IServiceBox } from "../types/custom-elements";
 
-const ServiceBox: React.FC<ServiceBox> = ({ title, text, icon }) => {
+const ServiceBox: React.FC<IServiceBox> = ({ title, text, icon }) => {
   return (
     <div className="box transition-all duration-300">
       <div className="flex justify-between">

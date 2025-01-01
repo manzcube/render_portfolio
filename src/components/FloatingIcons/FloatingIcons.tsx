@@ -1,18 +1,18 @@
 import React from "react";
-import "../style/FloatingIcons.css";
+import "./FloatingIcons.css";
 
-import pic1 from "../images/techIcons/react.webp";
-import pic2 from "../images/techIcons/fire.webp";
-import pic3 from "../images/techIcons/git.webp";
-import pic4 from "../images/techIcons/mongo.webp";
-import pic5 from "../images/techIcons/node.webp";
-import pic6 from "../images/techIcons/sass.webp";
-import pic7 from "../images/techIcons/tail.webp";
-import pic8 from "../images/techIcons/ts.webp";
-import pic9 from "../images/techIcons/go.webp";
-import pic10 from "../images/techIcons/redux.webp";
-import pic11 from "../images/techIcons/threejs.webp";
-import pic12 from "../images/techIcons/expo.webp";
+const pic1 = "/images/react.webp";
+const pic2 = "/images/fire.webp";
+const pic3 = "/images/git.webp";
+const pic4 = "/images/mongo.webp";
+const pic5 = "/images/node.webp";
+const pic6 = "/images/sass.webp";
+const pic7 = "/images/tail.webp";
+const pic8 = "/images/ts.webp";
+const pic9 = "/images/go.webp";
+const pic10 = "/images/redux.webp";
+const pic11 = "/images/threejs.webp";
+const pic12 = "/images/expo.webp";
 
 const FloatingIcons: React.FC = () => {
   return (

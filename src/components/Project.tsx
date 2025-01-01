@@ -2,17 +2,12 @@
 import React, { useState } from "react";
 
 // Style
-import "../style/Components.css";
+import "../style/Containers.css";
 
-interface ProjectProps {
-  title: string;
-  subtitle: string;
-  image: string;
-  url: string;
-  iconsList: string[] | null;
-}
+// Types
+import { IProject } from "../types/custom-elements";
 
-const Project: React.FC<ProjectProps> = ({
+const Project: React.FC<IProject> = ({
   title,
   subtitle,
   image,

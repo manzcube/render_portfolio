@@ -1,7 +1,7 @@
 import React from "react";
 
 // Style
-import "../style/Components.css";
+import "../style/Containers.css";
 
 // Components
 import ServiceBox from "../components/ServiceBox";
