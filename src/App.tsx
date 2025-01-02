@@ -14,9 +14,9 @@ const App: React.FC = () => {
     <>
       <Navbar />
       <Routes>
-        <Route path="/*" element={<Dashboard />} />
         <Route path="/d0a1" element={<D0A1 />} />
         <Route path="/d0a1-privacy-policy" element={<D0a1PrivacyPolicy />} />
+        <Route path="/*" element={<Dashboard />} />
       </Routes>
       <Footer />
     </>
