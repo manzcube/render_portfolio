@@ -42,7 +42,7 @@ const Project: React.FC<IProject> = ({
       </div>
       <div className="p-8">
         <div className="pb-0">
-          <div className="text-sm sm:text-md md:text-lg font-bold mb-3">
+          <div className="text-sm sm:text-md md:text-lg text-gray-800 font-bold mb-3">
             {title}
           </div>
           <div className="mb-5 text-xs text-gray-500 sm:text-xs md:text-sm">

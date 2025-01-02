@@ -31,7 +31,9 @@ const d0a1 = "/images/d0a1.webp";
 const Experience: React.FC = () => {
   return (
     <div id="experience" className="min-h-screen text-gray-900 bg-white">
-      {/* <p id="experience-section-title">Projects</p> */}
+      <p className="font-extrabold uppercase text-center py-10 text-md md:text-2xl mt-10">
+        SOME OF THE PROJECTS I DID
+      </p>
       <div className="flex pb-10 flex-wrap justify-around">
         <Project
           image={skualo}
@@ -61,13 +63,13 @@ const Experience: React.FC = () => {
           subtitle="Tailored productivity web app for diving centers. Organize employees, activities, boats and shifts using Drag&Drop."
           url="https://mido.onrender.com"
         />
-        <Project
+        {/* <Project
           image={cube}
           iconsList={[pic1, pic8, pic9, pic3, pic12]}
           title="Rubiks Cube Simulation"
           subtitle="Rubik's Cube 3D model with Go and THREE.js. Three.js representation of a 3x3 Rubik's Cube, with Go web server generating data structure and managing turning functionality."
           url="https://rubiks-cube-client.onrender.com"
-        />
+        /> */}
         <Project
           image={cafe}
           iconsList={[pic1, pic8, pic3, pic6]}

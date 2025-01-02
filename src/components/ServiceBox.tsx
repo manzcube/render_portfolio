@@ -10,7 +10,7 @@ const ServiceBox: React.FC<IServiceBox> = ({ title, text, icon }) => {
         <h1 className="font-extrabold text-lg mb-5">{title}</h1>
         {icon}
       </div>
-      <p className="font-thin text-xs tracking-wider">{text}</p>
+      <p className="font-thin text-sm tracking-wider">{text}</p>
     </div>
   );
 };

@@ -13,7 +13,7 @@ const esp = "/images/spain.webp";
 const cat = "/images/ddd.webp";
 
 // Files
-const resume = require("../pdfs/Resume_nophone.pdf");
+const resume = "/pdfs/SoftwareResume.pdf";
 
 // Style
 const socialLink =
@@ -28,22 +28,14 @@ const Introduction: React.FC = () => {
       >
         <FloatingIcons />
         <div className="flex flex-col items-center gap-5">
-          <div className="text-center relative group rounded-full">
-            <img
-              src={pic}
-              alt="pic"
-              className="w-28 lg:w-32 xl:w-56 h-auto object-cover shadow-2xl rounded-full"
-            />
-            <a
-              className="w-full rounded-full h-full text-xs text-white absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:bg-black/50 transition-all duration-100"
-              href="#services"
-            >
-              Check out my Services
-            </a>
-          </div>
+          <img
+            src={pic}
+            alt="pic"
+            className="w-28 lg:w-32 xl:w-56 h-auto object-cover shadow-2xl rounded-full"
+          />
         </div>
         <div className="p-4 text-gray-700 space-y-2 md:space-y-5 font-extrabold">
-          <p className="text-md lg:text-lg font-extrabold">Hi there! I'm</p>
+          <p className="text-md lg:text-lg font-normal">Hi there! I'm</p>
           <div className="text-2xl md:text-4xl lg:text-6xl space-x-5 flex items-center uppercase">
             <p className="text-blue-700 animated-bouncing">Marc</p>
             <p className="text-gray-900 animated-bouncing-delayed">Alzamora</p>
@@ -77,7 +69,7 @@ const Introduction: React.FC = () => {
             </span>
             <div className="relative language-hover-description">
               <img
-                className="h-4 w-4 animated-bouncing"
+                className="h-5 w-5 animated-bouncing"
                 src={eng}
                 alt="I speak english"
               />
@@ -85,7 +77,7 @@ const Introduction: React.FC = () => {
             </div>
             <div className="relative language-hover-description">
               <img
-                className="h-4 w-4 animated-bouncing-delayed"
+                className="h-5 w-5 animated-bouncing-delayed"
                 src={esp}
                 alt="I speak spanish"
               />
@@ -93,7 +85,7 @@ const Introduction: React.FC = () => {
             </div>
             <div className="relative language-hover-description">
               <img
-                className="h-4 w-4 animated-bouncing-delayed-2 rounded-sm opacity-90"
+                className="h-5 w-5 animated-bouncing-delayed-2 rounded-sm opacity-90"
                 src={cat}
                 alt="I speak catalan"
               />
@@ -101,10 +93,11 @@ const Introduction: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex pt-3 md:pt-10 md:pt-0 items-center gap-8">
+          <div className="flex pt-3 md:pt-5 items-center gap-8">
             <a
               href={resume}
-              download
+              target="_blank"
+              rel="noreferrer"
               className="bounce-up-on-hover py-3 px-5 text-xs bg-blue-700 text-white rounded-full border border-blue-700 hover:opacity-90 hover:bg-white hover:text-blue-700 transition-all duration-500"
             >
               Resume
@@ -127,14 +120,6 @@ const Introduction: React.FC = () => {
               >
                 <img src={github} alt="" className="w-6" />
               </a>
-              <a
-                className={socialLink}
-                target="_blank"
-                rel="noreferrer"
-                href="https://twitter.com/manzcube"
-              >
-                <img src={twitter} alt="" className="w-6" />
-              </a>
             </div>
 
             <a
@@ -142,6 +127,14 @@ const Introduction: React.FC = () => {
               href="https://contact-manzcube.zapier.app"
             >
               Contact Me
+            </a>
+          </div>
+          <div className="flex pt-3 md:pt-5 justify-start w-100">
+            <a
+              className="bounce-up-on-hover text-xs capitalize font-bold flex justify-center items-center text-white py-4 px-6 border border-gray-900 rounded-full bg-gray-900 hover:text-gray-900 hover:bg-white transition-all duration-500"
+              href="#what I do"
+            >
+              What I do?
             </a>
           </div>
 

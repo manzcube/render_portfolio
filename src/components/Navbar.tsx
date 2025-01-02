@@ -6,7 +6,8 @@ import Button from "./Button";
 
 const Navbar: React.FC = () => {
   const [activeSection, setActiveSection] = useState("introduction");
-  console.log("rendering navabr");
+
+  console.log(activeSection);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,7 +16,7 @@ const Navbar: React.FC = () => {
 
       // Calc the position of each section
       const introductionSection = document.getElementById("introduction");
-      const servicesSection = document.getElementById("services");
+      const servicesSection = document.getElementById("what I do");
       const experienceSection = document.getElementById("experience");
 
       // Check if the elements exist before comparing their positions
@@ -32,7 +33,7 @@ const Navbar: React.FC = () => {
           scrollY >= servicesSectionTop &&
           scrollY < experienceSectionTop
         ) {
-          setActiveSection("services");
+          setActiveSection("what I do");
         } else {
           setActiveSection("experience");
         }
@@ -63,7 +64,7 @@ const Navbar: React.FC = () => {
     >
       <Link
         to="/"
-        className="font-extrabold text-xs hidden sm:flex lg:text-lg lg:tracking-widest ml-6"
+        className="text-xs hidden sm:flex lg:text-lg lg:tracking-widest ml-6"
       >
         MANZCUBE
       </Link>
@@ -75,7 +76,7 @@ const Navbar: React.FC = () => {
         />
         <Button
           activeSection={activeSection}
-          selectionId="services"
+          selectionId="what I do"
           scrollFunc={scrollToSection}
         />
         <Button
