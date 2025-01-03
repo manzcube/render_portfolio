@@ -71,17 +71,17 @@ const Navbar: React.FC = () => {
       <div className="flex gap-4 w-fit">
         <Button
           activeSection={activeSection}
-          selectionId="introduction"
+          sectionId="introduction"
           scrollFunc={scrollToSection}
         />
         <Button
           activeSection={activeSection}
-          selectionId="what I do"
+          sectionId="what I do"
           scrollFunc={scrollToSection}
         />
         <Button
           activeSection={activeSection}
-          selectionId="experience"
+          sectionId="experience"
           scrollFunc={scrollToSection}
         />
       </div>

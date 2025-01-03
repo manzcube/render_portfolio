@@ -12,7 +12,7 @@ declare namespace JSX {
 
 // Button
 export interface IButton {
-  selectionId: string;
+  sectionId: string;
   activeSection: string;
   scrollFunc: (section: string) => void;
 }

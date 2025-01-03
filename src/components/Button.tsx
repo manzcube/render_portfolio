@@ -5,21 +5,23 @@ import "../style/Components.css";
 
 // Types
 import { IButton } from "../types/custom-elements";
+import { Link } from "react-router-dom";
 
 const Button: React.FC<IButton> = ({
-  selectionId,
+  sectionId,
   scrollFunc,
   activeSection,
 }) => {
   return (
-    <button
+    <Link
+      to={activeSection}
       className={`navbar-button ${
-        activeSection === selectionId ? "button-active" : ""
+        activeSection === sectionId ? "button-active" : ""
       }`}
-      onClick={() => scrollFunc(selectionId)}
+      onClick={() => scrollFunc(sectionId)}
     >
-      {selectionId.toUpperCase()}
-    </button>
+      {sectionId.toUpperCase()}
+    </Link>
   );
 };
 
