@@ -45,7 +45,7 @@ const Experience: React.FC = () => {
         <Project
           image={d0a1}
           iconsList={[pic13, pic1, pic3, pic8]}
-          title="D0A1 Accounting"
+          title="D0A1"
           subtitle="D0A1 is an offline app for tracking income and expenses. Manage assets, categorize transactions, and view summaries, all stored privately on your device. Simple, customizable, and secure."
           url="/d0a1"
         />
@@ -70,13 +70,13 @@ const Experience: React.FC = () => {
           subtitle="Rubik's Cube 3D model with Go and THREE.js. Three.js representation of a 3x3 Rubik's Cube, with Go web server generating data structure and managing turning functionality."
           url="https://rubiks-cube-client.onrender.com"
         /> */}
-        <Project
+        {/* <Project
           image={cafe}
           iconsList={[pic1, pic8, pic3, pic6]}
           title="Cafe Website"
           subtitle="Generic website for Cafes with languages and end-to-end made components."
           url="https://cafe-website-m90j.onrender.com/"
-        />
+        /> */}
       </div>
     </div>
   );
